@@ -31,9 +31,7 @@ export function Hero() {
         <div className="grid gap-8 lg:grid-cols-12 lg:gap-10">
           <div className="flex flex-col justify-start space-y-6 lg:col-span-7">
             <div className="space-y-6">
-              <h1 className="text-balance text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
-                Ops-Focused Solutions
-              </h1>
+              <h1 className="text-balance text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">{hero.title}</h1>
               <p className="text-pretty text-lg text-muted-foreground md:text-xl pl-2 lg:pl-4">{hero.subtitle}</p>
             </div>
 
