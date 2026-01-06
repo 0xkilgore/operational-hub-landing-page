@@ -14,7 +14,7 @@ export function SwitzerlandSection() {
         <p className="text-pretty text-base leading-relaxed text-muted-foreground">{switzerland.intro}</p>
       </div>
 
-      <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
+      <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3">
         {/* Crypto-Friendly Card */}
         <div className="rounded-lg border border-border bg-card p-6 shadow-sm">
           <h3 className="mb-4 text-xl font-bold">{switzerland.cryptoFriendly.title}</h3>
@@ -78,6 +78,18 @@ export function SwitzerlandSection() {
           <div className="mt-4 border-t border-border pt-4">
             <p className="text-xs italic text-muted-foreground/80">{switzerland.taxEfficiency.disclaimer}</p>
           </div>
+        </div>
+
+        <div className="rounded-lg border border-border bg-card p-6 shadow-sm">
+          <h3 className="mb-4 text-xl font-bold">{switzerland.protectionPrivacy.title}</h3>
+          <ul className="space-y-3">
+            {switzerland.protectionPrivacy.points.map((point, index) => (
+              <li key={index} className="flex gap-2 text-sm leading-relaxed text-muted-foreground">
+                <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-[var(--achra)]" />
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

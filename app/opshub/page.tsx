@@ -24,7 +24,7 @@ export default function OperationalHubPage() {
 
       {/* Problem / Reframe Section */}
       <Section id="problem" className="border-b border-border">
-        <div className="mx-auto max-w-3xl space-y-4 text-center">
+        <div className="mx-auto max-w-3xl space-y-6 text-center">
           <h2 className="text-balance text-3xl font-bold tracking-tight md:text-4xl">{problem.title}</h2>
           <p className="text-pretty text-lg leading-relaxed text-muted-foreground">{problem.body}</p>
         </div>
@@ -70,7 +70,7 @@ export default function OperationalHubPage() {
             {benefits.items.map((item, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-lg border border-border bg-card p-6 shadow-sm transition-all hover:border-[rgb(122,58,255,0.5)] hover:shadow-lg"
+                className="group relative overflow-hidden rounded-lg border border-border bg-card p-6 shadow-sm transition-all hover:border-[rgb(122,58,255,0.5)] hover:shadow-md"
               >
                 <div className="space-y-4">
                   <h3 className="text-lg font-semibold leading-tight">{item.title}</h3>

@@ -11,7 +11,7 @@ export const navigation = {
 }
 
 export const hero = {
-  title: "Keep Building. Stay Protected.",
+  title: "Keep Building. Offload the Busywork.",
   subtitle:
     "The Operational Hub is a turnkey solution that gives your project a legal shield, member privacy, and a compliant bridge to the real world, without corporate bloat. Ongoing operations are handled through an operator team so you can stay focused on shipping.",
   primaryCta: { label: "Request a needs analysis", href: "/contact" },
@@ -20,8 +20,8 @@ export const hero = {
 }
 
 export const problem = {
-  title: "Protocols Use Multisigs. Operational Hubs Protect The Humans Behind Them.",
-  body: "Sign, coordinate, and pay through an entity, not in personal capacity. Put a legal shield between contributors and real-world obligations.",
+  title: "Stop doing ops as a side job",
+  body: "The Operational Hub turns recurring admin into a system: invoicing, payouts, approvals, records, and reporting, supported by an operator team so your builders stay focused on shipping.",
 }
 
 export const audience = {
@@ -55,31 +55,7 @@ export const benefits = {
   title: "Why Teams Choose An Operational Hub",
   items: [
     {
-      title: "Privacy And Personal Protection",
-      points: [
-        "Members are not doxxed by default",
-        "Put a legal shield between you and ops",
-        "Reduce exposure in real-world interactions",
-      ],
-    },
-    {
-      title: "Legal Wrapper Around Your Multisig",
-      points: [
-        "Turn a multisig into a legal actor",
-        'Separate "you" from "you for the org"',
-        "Clarify roles and accountability",
-      ],
-    },
-    {
-      title: "Payments And Compliance, Without The Maze",
-      points: [
-        "Pay vendors in fiat or stablecoins",
-        "Clean invoicing and approval flows",
-        "Reporting that scales with you",
-      ],
-    },
-    {
-      title: "Spend Less Time On Operations",
+      title: "Spend less time on operations",
       points: [
         "Replace admin chaos with workflows",
         "Keep payouts, records, approvals on track",
@@ -87,7 +63,7 @@ export const benefits = {
       ],
     },
     {
-      title: "Standard Templates Reduce Legal Overhead",
+      title: "Standard templates reduce legal overhead",
       points: [
         "Start from a proven agreement stack",
         "Fewer drafting and review cycles",
@@ -95,7 +71,31 @@ export const benefits = {
       ],
     },
     {
-      title: "Flexible Structure, No Lock-In",
+      title: "Payments and compliance, without the maze",
+      points: [
+        "Pay vendors in fiat or stablecoins",
+        "Clean invoicing and approval flows",
+        "Reporting that scales with you",
+      ],
+    },
+    {
+      title: "Privacy and personal protection",
+      points: [
+        "Members are not doxxed by default",
+        "Put a legal shield between you and ops",
+        "Reduce exposure in real-world interactions",
+      ],
+    },
+    {
+      title: "Legal wrapper around your multisig",
+      points: [
+        "Put a legal entity behind your treasury",
+        "Sign agreements and pay vendors through the Association",
+        "Keep onchain control while operating credibly offchain",
+      ],
+    },
+    {
+      title: "Flexible structure, no lock-in",
       points: ["Start lightweight and evolve", "Add structure as you grow", "Wind down if needs change"],
     },
   ],
@@ -189,6 +189,14 @@ export const switzerland = {
       },
     },
     disclaimer: "Informational only. Not legal, financial, or tax advice.",
+  },
+  protectionPrivacy: {
+    title: "Protection and discretion",
+    points: [
+      "Member privacy by default",
+      "A legal shield between contributors and real-world obligations",
+      "Designed to reduce personal exposure while operating credibly",
+    ],
   },
 }
 
