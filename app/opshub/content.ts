@@ -224,7 +224,7 @@ export const faq = {
         "The Hub provides a consistent workflow for invoices and payouts. Invoices can be issued through the entity, approvals are collected through a clear process, and payouts can be executed in fiat or stablecoins with records kept in one place for reporting and tax support. The operator team coordinates the workflow and documentation, while your core team keeps approval control.",
     },
     {
-      question: "How does setup work and how long does it take?",
+      question: "How do setup work and how long does it take?",
       answer:
         "Setup is designed to be standardized and fast. You choose the scope of operations you want covered, complete onboarding and compliance steps, and then the entity and operating workflows are put in place using a proven template stack. From there, the operator team helps you transition invoicing, payouts, records, and month-end routines into the new system. Timeline depends on complexity and required reviews, but the goal is to get you operational quickly without a custom legal build.",
     },
@@ -281,4 +281,20 @@ export const footerCta = {
 export const footer = {
   copyright: "© 2026 Achra.",
   disclaimer: "Informational only. Not legal, financial, or tax advice.",
+}
+
+export const differentiation = {
+  title: "More Than Entity Setup",
+  description:
+    "Unlike standalone entity brokers, this is an integrated bundle with operator support, workflow systems, and clean recordkeeping built in from day one.",
+}
+
+export const switzerland = {
+  title: "Switzerland",
+  description: "A stable, internationally recognized jurisdiction with mature banking and professional services.",
+}
+
+export const taxCompliance = {
+  title: "Tax Efficiency",
+  description: "In some cases, teams can pursue a cost plus 5% model via a tax ruling.",
 }
