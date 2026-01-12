@@ -166,6 +166,30 @@ export const howItWorks = {
       title: "Operate",
       description:
         "Run payments and agreements through the entity, not as individuals. The operator team handles day-to-day operations and maintains clean documentation for reporting, audits when needed, and tax filings.",
+      operatorSupportDetails: [
+        {
+          heading: "Complete operational setup and coordination",
+          description: "End-to-end implementation so you can focus on the work, not administration.",
+        },
+        {
+          heading: "Workforce classification and management",
+          description:
+            "Templates and guidance for contractor and employee structures, with compliant classification support.",
+        },
+        {
+          heading: "Compensation and payment infrastructure",
+          description: "Multi-currency payouts, expense workflows, and payment scheduling through regulated rails.",
+        },
+        {
+          heading: "Swiss-compliant accounting",
+          description: "Swiss GAAP aligned bookkeeping, reporting, and annual financial statements.",
+        },
+        {
+          heading: "Swiss tax and regulatory compliance",
+          description:
+            "Support for filings, VAT workflows, and keeping records organized for reporting and tax filings.",
+        },
+      ],
     },
   ],
 }

@@ -129,6 +129,22 @@ export default function OperationalHubPage() {
                     {"counselNote" in step && step.counselNote && (
                       <p className="mt-2 text-xs italic text-muted-foreground/80">{step.counselNote}</p>
                     )}
+                    {"operatorSupportDetails" in step && step.operatorSupportDetails && (
+                      <details className="mt-4 group">
+                        <summary className="cursor-pointer list-none text-sm font-medium text-[var(--achra)] hover:text-[var(--achra-hover)] flex items-center gap-2">
+                          <span className="inline-block transition-transform group-open:rotate-90">▸</span>
+                          What's included in operator support
+                        </summary>
+                        <div className="mt-3 space-y-3 rounded-lg border border-border bg-muted/30 p-4">
+                          {step.operatorSupportDetails.map((item, idx) => (
+                            <div key={idx} className="space-y-1">
+                              <h4 className="text-sm font-semibold">{item.heading}</h4>
+                              <p className="text-xs text-muted-foreground leading-relaxed">{item.description}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </details>
+                    )}
                   </div>
                 </div>
               ))}
@@ -181,22 +197,6 @@ export default function OperationalHubPage() {
       {/* FAQ Section */}
       <Section id="faq" className="border-b border-border">
         <FAQ />
-      </Section>
-
-      {/* Schedule Placeholder Section */}
-      <Section id="schedule" className="border-b border-border bg-muted/30">
-        <div className="mx-auto max-w-3xl space-y-6 text-center">
-          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Schedule a Call</h2>
-          <p className="text-lg text-muted-foreground">Booking calendar will be integrated here.</p>
-        </div>
-      </Section>
-
-      {/* Purchase Placeholder Section */}
-      <Section id="purchase" className="border-b border-border">
-        <div className="mx-auto max-w-3xl space-y-6 text-center">
-          <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Purchase Now</h2>
-          <p className="text-lg text-muted-foreground">Purchase flow will be integrated here.</p>
-        </div>
       </Section>
 
       {/* Footer CTA Section */}
