@@ -5,7 +5,6 @@ import { Navigation } from "./_components/Navigation"
 import { Hero } from "./_components/Hero"
 import { Section } from "./_components/Section"
 import { FAQ } from "./_components/FAQ"
-import { OperatorSupport } from "./_components/OperatorSupport"
 import { EntitySection } from "./_components/EntitySection"
 import { problem, audience, benefits, whatYouGet, howItWorks, ownership, footerCta, footer } from "./content"
 import { Zap, Shield, Users, FileText, Workflow } from "lucide-react"
@@ -151,11 +150,6 @@ export default function OperationalHubPage() {
             </div>
           </div>
         </div>
-      </Section>
-
-      {/* Operator Support Section */}
-      <Section id="operator-support" className="border-b border-border">
-        <OperatorSupport />
       </Section>
 
       {/* Ownership Section */}
