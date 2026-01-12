@@ -41,14 +41,19 @@ export function FAQ() {
             <div className="border-t border-border px-5 pb-5 pt-4">
               <p className="text-pretty leading-relaxed text-muted-foreground">{item.answer}</p>
               {"details" in item && item.details && (
-                /* Replace cyan with Achra purple */
-                <ul className="mt-4 space-y-2 border-l-2 border-[rgb(122,58,255,0.3)] pl-4">
-                  {item.details.map((detail, detailIndex) => (
-                    <li key={detailIndex} className="text-sm leading-relaxed text-muted-foreground">
-                      {detail}
-                    </li>
-                  ))}
-                </ul>
+                <div className="mt-4 space-y-2 rounded-lg bg-muted/50 p-4">
+                  <p className="text-sm font-medium">Example (illustrative):</p>
+                  <ul className="space-y-1 border-l-2 border-[rgb(122,58,255,0.3)] pl-4">
+                    {item.details.map((detail, detailIndex) => (
+                      <li key={detailIndex} className="text-sm leading-relaxed text-muted-foreground">
+                        {detail}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {"additionalInfo" in item && item.additionalInfo && (
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{item.additionalInfo}</p>
               )}
               {"disclaimer" in item && item.disclaimer && (
                 <p className="mt-4 text-sm italic text-muted-foreground/80">{item.disclaimer}</p>

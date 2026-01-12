@@ -1,21 +1,11 @@
 "use client"
 
-import type React from "react"
-
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { DiagramCard } from "./DiagramCard"
 import { hero } from "../content"
 
 export function Hero() {
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault()
-    const target = document.querySelector("#problem")
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" })
-    }
-  }
-
   return (
     <section className="relative overflow-hidden border-b border-border">
       {/* Background Effects */}
@@ -35,7 +25,7 @@ export function Hero() {
               <p className="text-pretty text-lg text-muted-foreground md:text-xl pl-2 lg:pl-4">{hero.subtitle}</p>
             </div>
 
-            <div className="flex flex-col gap-3 sm:flex-row">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button
                 size="lg"
                 asChild
@@ -50,6 +40,14 @@ export function Hero() {
                 className="hover:border-[var(--achra)]/50 hover:text-[var(--achra)] focus-visible:ring-[var(--achra)]/30 bg-transparent"
               >
                 <Link href={hero.secondaryCta.href}>{hero.secondaryCta.label}</Link>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                asChild
+                className="hover:border-[var(--achra)]/50 hover:text-[var(--achra)] focus-visible:ring-[var(--achra)]/30 bg-transparent"
+              >
+                <Link href={hero.tertiaryCta.href}>{hero.tertiaryCta.label}</Link>
               </Button>
             </div>
 

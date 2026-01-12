@@ -6,47 +6,44 @@ export const navigation = {
     { label: "Bookkeeping", href: "#services" },
   ],
   links: [{ label: "Operational Hub", href: "/opshub", active: true }],
-  cta: { label: "Book a demo", href: "/demo" },
-  secondaryCta: { label: "Request a needs analysis", href: "/contact" },
+  cta: { label: "Book a demo", href: "#purchase" },
+  secondaryCta: { label: "Request a needs analysis", href: "#schedule" },
 }
 
 export const hero = {
-  title: "Keep Building. Offload the Busywork.",
+  title: "Less Admin. More Building",
   subtitle:
-    "The Operational Hub is a turnkey solution that gives your project a legal shield, member privacy, and a compliant bridge to the real world, without corporate bloat. Ongoing operations are handled through an operator team so you can stay focused on shipping.",
-  primaryCta: { label: "Request a needs analysis", href: "/contact" },
-  secondaryCta: { label: "Talk to an operator", href: "/contact" },
-  badges: ["Swiss Association", "Legal Personhood", "Member Privacy", "Invoicing + Payouts", "Compliance-Ready"],
+    "The Operational Hub is a turnkey solution that runs your back office: invoicing, approvals, payouts, month end close, and reporting, with an operator team so your team stays focused on shipping. It also gives your project a legal shield, member privacy and a compliant bridge to real-world operations in a streamlined entity.",
+  primaryCta: { label: "Schedule a call", href: "#schedule" },
+  secondaryCta: { label: "More info", href: "#faq" },
+  tertiaryCta: { label: "Purchase Now", href: "#purchase" },
+  badges: ["Operator Support", "Invoicing + Approvals", "Global Payouts", "Monthly Close", "Agreement Templates"],
 }
 
 export const problem = {
-  title: "Stop doing ops as a side job",
-  body: "The Operational Hub turns recurring admin into a system: invoicing, payouts, approvals, records, and reporting, supported by an operator team so your builders stay focused on shipping.",
+  title: "Stop Doing Ops as a Side Job",
+  body: "Running an entity creates recurring work: invoices, approvals, payouts, close, and reporting. The Operational Hub turns that into a repeatable system with operator support and workflow software, so the project can run smoothly without admin becoming a second job.",
 }
 
 export const audience = {
   title: "Who This Is For",
-  subtitle: "If you see yourself here, start with the needs analysis.",
+  subtitle:
+    "Built for teams with $250k+ in annual operating spend who need a repeatable way to run invoicing, payouts, and reporting without building a full back office.",
   items: [
     {
-      label: "Multisig Operators",
-      description: "Budget owners, protocol ops, and permanent contributor groups",
+      label: "DevCo and builder teams",
+      description:
+        "Teams paying contributors and vendors on a recurring cadence who want operations handled without adding full-time admin headcount.",
     },
     {
-      label: "Grantees",
-      description: "Teams applying for or receiving DAO grants",
+      label: "Open-source builders",
+      description:
+        "Teams maintaining open-source projects who want to own their entity and run a repeatable back office for invoicing, approvals, payouts, and reporting, even when funding comes from many different sources.",
     },
     {
-      label: "Security Councils And Admin Multisigs",
-      description: "Upgrade keys, pausing rights, and high-stakes permissions",
-    },
-    {
-      label: "Professional Delegates And Governance Teams",
-      description: "Public work with clean separation",
-    },
-    {
-      label: "Privacy-First Builders",
-      description: "Sovereignty and discretion by default",
+      label: "Privacy-first teams",
+      description:
+        "Teams that want to run real-world operations with member privacy by default and less personal exposure for signers and operators.",
     },
   ],
 }
@@ -56,159 +53,106 @@ export const benefits = {
   items: [
     {
       title: "Spend less time on operations",
-      points: [
-        "Replace admin chaos with workflows",
-        "Keep payouts, records, approvals on track",
-        "Free contributors to ship",
-      ],
+      description:
+        "Turn invoicing, approvals, payouts, close and reporting into a repeatable system so ops work stops consuming your week",
     },
     {
-      title: "Standard templates reduce legal overhead",
-      points: [
-        "Start from a proven agreement stack",
-        "Fewer drafting and review cycles",
-        "Counsel time on specifics, not basics",
-      ],
+      title: "Standard templates reduce legal costs",
+      description:
+        "Start from a proven agreement stack and templates so you spend less on custom drafting and repeated reviews.",
     },
     {
       title: "Payments and compliance, without the maze",
-      points: [
-        "Pay vendors in fiat or stablecoins",
-        "Clean invoicing and approval flows",
-        "Reporting that scales with you",
-      ],
+      description:
+        "Run payouts and records through a clean process that works in fiat or stablecoins and keeps you audit ready when needed.",
     },
     {
       title: "Privacy and personal protection",
-      points: [
-        "Members are not doxxed by default",
-        "Put a legal shield between you and ops",
-        "Reduce exposure in real-world interactions",
-      ],
+      description:
+        "Operate with member privacy by default and reduce personal exposure when the project interacts with the real world",
     },
     {
-      title: "Legal wrapper around your multisig",
-      points: [
-        "Put a legal entity behind your treasury",
-        "Sign agreements and pay vendors through the Association",
-        "Keep onchain control while operating credibly offchain",
-      ],
+      title: "Legal entity behind your operations",
+      description:
+        "Keep onchain control while the entity handles contracts, invoicing, and vendor relationships on the team's behalf.",
     },
     {
       title: "Flexible structure, no lock-in",
-      points: ["Start lightweight and evolve", "Add structure as you grow", "Wind down if needs change"],
+      description: "Start lightweight, add structure as you grow, and wind down cleanly if your needs change.",
     },
   ],
 }
 
 export const whatYouGet = {
   title: "What You Get",
+  subtitle:
+    "A complete operating bundle, including workflow software and an operator team to run the day to day, plus an entity that can sign, pay and keep records.",
   items: [
     {
-      id: "multisig",
-      label: "Multisig",
-      subtitle: "Technical layer",
-      description: "Keep control onchain while moving fast with clear signing and approvals.",
-    },
-    {
-      id: "association",
-      label: "Swiss Association",
-      subtitle: "Legal shield",
+      id: "operator",
+      label: "Operator Support",
       description:
-        "Put a legal person between contributors and real-world obligations, without heavy corporate overhead.",
+        "An operator team runs recurring workflows for you, so invoicing, approvals, payouts, and close do not become a constant distraction.",
     },
     {
-      id: "mpa",
-      label: "MPA",
-      subtitle: "Multisig Participation Agreement",
+      id: "workflow",
+      label: "Workflow System",
       description:
-        "Standardize how signers operate through the Association, with defined roles, accountability, and process.",
-      tooltip: "MPA = Multisig Participation Agreement",
+        "Repeatable workflows for invoices, approvals, payouts, and records so operations are consistent month to month, with documentation organized for reporting and tax filings.",
     },
     {
-      id: "network",
-      label: "Network",
-      subtitle: "Agreements + relationships",
-      description: "Make contributor and vendor relationships legible with a reusable agreement stack.",
-    },
-    {
-      id: "operations",
-      label: "Operations",
-      subtitle: "Billing, payments, accounting",
+      id: "payments",
+      label: "Payments Layer",
       description:
-        "Run invoicing, payouts, records, and reporting through repeatable workflows, supported by an operator team.",
+        "Payouts in fiat or stablecoins with clean approval and recordkeeping, designed for contributor heavy teams.",
+    },
+    {
+      id: "agreements",
+      label: "Agreement Stack",
+      description:
+        "A proven set of templates and agreements that reduces legal costs and gets you to a working setup faster.",
+    },
+    {
+      id: "entity",
+      label: "Legal Entity",
+      description:
+        "A legal home for the project that can sign contracts, issue invoices, hold IP and other assets, and run operations through the entity instead of through individuals.",
     },
   ],
-  trustSignal: {
-    text: "Coordinated with Swiss counsel (starting with MME).",
-    logoAlt: "MME Legal Partner",
-  },
 }
 
-export const differentiation = {
-  title: "More Than Entity Setup",
-  intro:
-    "Entity brokers can form a wrapper. The Operational Hub is the operating bundle: entity + agreement stack + workflows + operator support.",
-}
-
-export const switzerland = {
-  title: "A Predictable Jurisdiction For Crypto Teams",
-  intro:
-    "Switzerland is a stable, crypto-native jurisdiction with clear legal frameworks, credible service providers, and a long track record supporting global open-source and protocol teams.",
-  cryptoFriendly: {
-    title: "Crypto-Friendly By Design",
-    points: [
-      "Established ecosystem of counsel, accounting, and banking providers familiar with crypto",
-      "Credible home base for teams signing agreements and paying contributors globally",
-      "Predictable processes and documentation standards",
-    ],
-    trustNote: "Coordinated with Swiss counsel (starting with MME).",
-  },
-  taxEfficiency: {
-    title: "Tax Efficiency, When Eligible",
-    summary: [
-      "Taxable income may be ~5% of annual operating costs (when eligible)",
-      "Zug effective tax rate is often ~11% of taxable income",
-      "Overall effective rate can be ~0.55% of total costs",
-    ],
-    accordion: {
-      suitable: {
-        title: "Suitable for:",
-        content:
-          "Typically aligns with low-risk service activity such as open-source development, consultancy, R&D, or administrative support.",
-      },
-      unsuitable: {
-        title: "Usually not suitable for:",
-        content:
-          "Usually not suitable for higher-risk activity like token sales, active crypto trading, staking or mining, or DeFi yield activity.",
-      },
-      requirements: {
-        title: "Requirements:",
-        content:
-          "Requires robust cost accounting and is typically pursued case by case via a tax ruling with Swiss tax advisors.",
-      },
-    },
-    disclaimer: "Informational only. Not legal, financial, or tax advice.",
-  },
-  protectionPrivacy: {
-    title: "Protection and discretion",
-    points: [
-      "Member privacy by default",
-      "A legal shield between contributors and real-world obligations",
-      "Designed to reduce personal exposure while operating credibly",
-    ],
-  },
+export const entitySection = {
+  title: "An entity built for global operations",
+  subtitle:
+    "This structure gives teams a credible way to sign contracts, issue invoices, pay contributors, and hold IP through an entity instead of through individuals, while staying compatible with globally distributed operations.",
+  switzerlandTitle: "Switzerland, built for modern teams",
+  switzerlandDescription:
+    "Switzerland offers a stable legal environment with mature banking and professional services, and is widely used by crypto and open-source organizations that need to operate globally.",
+  taxTitle: "Tax efficiency, when eligible",
+  taxDescription:
+    "In some cases, teams can pursue a cost plus 5% model via a tax ruling, which can materially reduce the tax burden on operational spend.",
+  taxExample: [
+    "CHF 1,000,000 annual operating costs",
+    "Taxable income may be 5% of costs → CHF 50,000",
+    "Effective tax rate in Zug roughly 11% of taxable income → about CHF 5,500",
+    "That is about 0.55% of total annual costs",
+  ],
+  taxDisclaimer: "Not automatic and depends on activities and structure. Informational only, not tax advice.",
+  privacyTitle: "Privacy and discretion",
+  privacyDescription:
+    "Member privacy is supported by default, which reduces unnecessary exposure while still operating credibly in the real world.",
+  jurisdictionNote: "Other jurisdictions and entity options are planned as the product expands.",
 }
 
 export const howItWorks = {
   title: "How It Works",
-  subhead: "Legal setup comes first. Operational setup follows. Then you run day to day through the entity.",
+  subtitle: "Legal setup comes first. Operational setup follows. Then you run day to day through the entity.",
   steps: [
     {
       number: 1,
       title: "Legal Setup (templates + counsel review)",
       description:
-        "Create your Operational Hub with templates for Articles/Bylaws, MPA, governance minutes, and membership records. Counsel reviews and customizes templates.",
+        "Create your Operational Hub and assemble your contracts with templates for Articles/Bylaws, MPA, governance minutes, contributor agreements and membership records. If required, local Counsel reviews and customizes templates.",
       counselNote: "External Swiss counsel reviews and customizes templates (not legal advice).",
     },
     {
@@ -221,27 +165,38 @@ export const howItWorks = {
       number: 3,
       title: "Operate",
       description:
-        "Run payments and agreements through the entity, not as individuals. Your team focuses on building while the operator team handles day-to-day admin.",
+        "Run payments and agreements through the entity, not as individuals. The operator team handles day-to-day operations and maintains clean documentation for reporting, audits when needed, and tax filings.",
     },
+  ],
+}
+
+export const operatorSupport = {
+  title: "What's included in operator support (typical scope)",
+  items: [
+    "Setup and coordination: end-to-end launch, vendor coordination, timeline and checklist ownership",
+    "Payments operations: invoicing intake, approvals workflow, payouts scheduling, multi-currency support",
+    "Accounting and reporting: bookkeeping coordination, monthly close support, financial reporting package",
+    "Tax and filings readiness: tax-ready records, VAT support where applicable, documentation for tax filings",
+    "Contracts and workforce ops: contractor and employment agreement templates, classification support with Swiss specialists",
+    "Tools and systems: accounting system setup (for example Xero), records storage, repeatable workflows",
   ],
 }
 
 export const ownership = {
   title: "What You Own vs What Your Operator Team Handles",
-  subtitle: "You retain ultimate responsibility. The operator team handles day-to-day administration.",
+  subtitle: "You own the entity and the key approvals. The operator team runs day-to-day administration.",
   youOwn: [
-    "Appoint and confirm roles",
-    "Approve major actions",
-    "Ensure compliance intent and assumptions are accurate",
-    "Engage counsel/accountants when needed",
+    "Ultimate control: Core team assigned as founding member of the association, giving them ultimate control over the entity.",
+    "Treasury control: You control the treasury and approvals, including a multisig if you use one.",
+    "Decision making: You set policies, budgets, and who can approve what.",
+    "External advisors: You choose when to engage counsel, accounting, or other specialists.",
   ],
   operatorHandles: [
-    "Maintain records and checklists",
-    "Coordinate filings workflows with accountants",
-    "Keep operational roles and approvals current in process",
-    "Coordinate invoice approvals, payouts, vendor ops",
+    "Invoicing and collections workflows: Issuing invoices, tracking status, and keeping records organized.",
+    "Approvals and payouts: Preparing payment runs, collecting approvals, and executing payouts in fiat or stablecoins.",
+    "Monthly close and reporting: Reconciliation support, structured records, and monthly reporting inputs.",
+    "Admin and coordination: Vendor onboarding, documentation, and coordination with accounting and legal as needed.",
   ],
-  disclaimer: "Informational only. Not legal, financial, or tax advice.",
 }
 
 export const faq = {
@@ -249,62 +204,81 @@ export const faq = {
   disclaimer: "Note: The FAQ below is for informational purposes only. It is not legal, financial, or tax advice.",
   items: [
     {
-      question: "What is an Operational Hub?",
+      question: "Do I still need someone to run operations?",
       answer:
-        "An Operational Hub is a turnkey structure for open-source builders and DAO contributor teams. It bundles a compliant Swiss Association with operational and payment workflows so globally distributed teams can operate professionally without sacrificing privacy or autonomy.",
+        "No. The Operational Hub includes workflow software plus an operator team that runs the recurring back office work, like invoicing, payables, approvals, contributor payments, and month-end processes, so you do not need to staff these functions internally.",
     },
     {
-      question: "How does this protect multisig signers and contributors?",
+      question: "Do I still need an accountant?",
       answer:
-        'The goal is to separate "you the person" from "you acting on behalf of the organization." When contracts, invoices, and operations are handled through the Association, operational liability is generally shifted away from individuals and onto the entity. However, it does not protect against all risks—managers and multisig signers can still have personal exposure in criminal, regulatory, tax, or employment-law matters, or in cases of willful misconduct or gross negligence.',
+        "No, not as an internal function. The Operational Hub handles day-to-day finance ops and keeps records organized, including the documentation needed for tax reporting, so you do not need to hire a dedicated accounting role to stay on top of the back office. When tax filings or statutory filings are required, the Hub coordinates with external professionals as needed.",
+    },
+    {
+      question: "Do I still need legal counsel?",
+      answer:
+        "Sometimes, but far less than a custom setup. The Hub is built on standardized templates and a proven agreement stack, which greatly reduces drafting and repeated reviews. You also get an introduction to MME, a top Swiss firm that helped draft the templates, for cases where you want counsel review or have edge cases.",
+    },
+    {
+      question: "How do invoicing and payments work (fiat and stablecoins)?",
+      answer:
+        "The Hub provides a consistent workflow for invoices and payouts. Invoices can be issued through the entity, approvals are collected through a clear process, and payouts can be executed in fiat or stablecoins with records kept in one place for reporting and tax support. The operator team coordinates the workflow and documentation, while your core team keeps approval control.",
+    },
+    {
+      question: "How does setup work and how long does it take?",
+      answer:
+        "Setup is designed to be standardized and fast. You choose the scope of operations you want covered, complete onboarding and compliance steps, and then the entity and operating workflows are put in place using a proven template stack. From there, the operator team helps you transition invoicing, payouts, records, and month-end routines into the new system. Timeline depends on complexity and required reviews, but the goal is to get you operational quickly without a custom legal build.",
+    },
+    {
+      question: "Can we wind this down later?",
+      answer:
+        "Yes. The Operational Hub is designed to be flexible. You can start lightweight, evolve the setup as your needs change, and wind it down cleanly if it is no longer the right fit, without being locked into a heavyweight corporate structure.",
     },
     {
       question: "Do members have to be public or doxxed?",
       answer:
-        "Not by default. Swiss Associations are generally not required to be publicly listed in a registry in the standard case, which supports privacy-first operations for distributed contributor teams.",
-    },
-    {
-      question: "Why Switzerland and why Zug?",
-      answer:
-        'Switzerland is a stable, internationally recognized jurisdiction with mature financial infrastructure. The Hub is based in Canton Zug ("Crypto Valley"), known for crypto-friendly business policies and the presence of many high-profile projects.',
-    },
-    {
-      question: "What are the key constraints of a Swiss Association?",
-      answer:
-        "Swiss Associations are non-profit entities. That means: commercial activities are typically allowed if secondary and supportive to the main purpose; there are no shares (so you cannot receive external investments or issue security tokens as equity); and you cannot pay dividends or distribute profits (members have no claim on the Association's assets).",
-    },
-    {
-      question: "What does tax efficiency mean here?",
-      answer:
-        "In some cases, a Zug-based structure may pursue a cost plus 5% model via a tax ruling. This is not automatic and depends on your activities. Example: CHF 1,000,000 in annual operating costs → CHF 50,000 taxable income (5% of costs) → at Zug's effective tax rate of ~11%, approximately CHF 5,500 in tax, or ~0.55% of total annual costs. This typically aligns with low-risk service activity (open-source development, consultancy, R&D, admin support) and is usually not suitable for higher risk activity (token sales, active trading, staking/mining, DeFi yield). Requires robust cost accounting and is typically pursued case by case via a tax ruling with Swiss tax advisors. Informational only. Not legal or tax advice.",
-    },
-    {
-      question: "Can we wind down the Operational Hub later?",
-      answer:
-        "Yes. The structure is intended to be flexible: you can start lightweight, evolve as your needs change, and wind down the Hub if it no longer fits your operating model.",
+        "Not by default. In the standard case, member names do not need to be published in a public registry, which supports privacy-first operations. Some counterparties and service providers, like banks or compliance vendors, may still require identity verification as part of their onboarding.",
     },
     {
       question: "What does liability protection mean?",
       answer:
-        "Liability is not absolute. The Association structure provides a layer of separation, but managers and signers may still have personal exposure in certain situations including criminal, regulatory, tax, or employment matters, or cases involving willful misconduct or gross negligence.",
+        "The entity provides a layer of separation so contracts, invoices, and operations can be handled through the organization instead of in a personal capacity. Liability is not absolute. Individuals can still have personal exposure in certain situations, including criminal, regulatory, tax, or employment matters, or cases involving willful misconduct or gross negligence.",
+    },
+    {
+      question: "What are the key constraints of the entity?",
+      answer:
+        "This structure is designed for operating, not fundraising. It does not have shares, cannot pay dividends, and is typically used for service and development activity rather than high-risk financial activity. Commercial activity is generally allowed when it is secondary and supports the stated purpose, and activities like token sales or active trading are usually not a fit.",
+    },
+    {
+      question: "Why Switzerland?",
+      answer:
+        "Switzerland is a stable, internationally recognized jurisdiction with mature banking and professional services, which makes it well-suited for globally distributed teams that need to sign contracts, issue invoices, pay contributors, and hold IP through an entity. Many crypto and open-source organizations use Switzerland for the same reasons. Zug is a common home base because it has deep talent and service provider infrastructure for these teams.",
+    },
+    {
+      question: "What does tax efficiency mean here?",
+      answer:
+        "In some cases, a Zug-based structure may pursue a cost plus 5% model via a tax ruling, which can reduce the taxable income tied to operational spend. This is not automatic and depends on your activities and documentation.",
+      details: [
+        "CHF 1,000,000 annual operating costs",
+        "Taxable income may be 5% of costs → CHF 50,000",
+        "Effective tax rate in Zug roughly 11% of taxable income → about CHF 5,500",
+        "That is about 0.55% of total annual costs",
+      ],
+      additionalInfo:
+        "This approach typically aligns with lower-risk service activity, like open-source development, consultancy, R&D, or administrative support, and is usually not suitable for higher-risk activity, like token sales, active trading, staking or mining, or DeFi yield. It requires strong cost accounting and is typically pursued case by case with Swiss tax advisors.",
+      disclaimer: "Informational only. Not tax advice.",
     },
   ],
 }
 
 export const footerCta = {
-  prompt: "Stay protected while you build. Offload the busywork.",
-  primaryCta: { label: "Request a needs analysis", href: "/contact" },
-  secondaryCta: { label: "Talk to an operator", href: "/contact" },
+  prompt: "Build the product, not the back office.",
+  subtitle: "A back office system for global teams, with clean records for reporting and tax filings.",
+  primaryCta: { label: "Schedule a call", href: "#schedule" },
+  secondaryCta: { label: "More info", href: "#faq" },
+  tertiaryCta: { label: "Purchase Now", href: "#purchase" },
 }
 
 export const footer = {
   copyright: "© 2026 Achra.",
   disclaimer: "Informational only. Not legal, financial, or tax advice.",
-}
-
-export const taxCompliance = {
-  title: "",
-  summary: [],
-  accordion: {},
-  disclaimer: "",
 }
