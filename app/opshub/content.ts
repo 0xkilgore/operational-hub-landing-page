@@ -16,7 +16,7 @@ export const hero = {
     "The Operational Hub is a turnkey solution that runs your back office: invoicing, approvals, payouts, month end close, and reporting, with an operator team so your team stays focused on shipping. It also gives your project a legal shield, member privacy and a compliant bridge to real-world operations in a streamlined entity.",
   primaryCta: { label: "Schedule a call", href: "#schedule" },
   secondaryCta: { label: "More info", href: "#faq" },
-  tertiaryCta: { label: "Purchase Now", href: "#purchase" },
+  tertiaryCta: { label: "Order Now", href: "#purchase" },
   badges: ["Operator Support", "Invoicing + Approvals", "Global Payouts", "Monthly Close", "Agreement Templates"],
 }
 
@@ -299,7 +299,7 @@ export const footerCta = {
   subtitle: "A back office system for global teams, with clean records for reporting and tax filings.",
   primaryCta: { label: "Schedule a call", href: "#schedule" },
   secondaryCta: { label: "More info", href: "#faq" },
-  tertiaryCta: { label: "Purchase Now", href: "#purchase" },
+  tertiaryCta: { label: "Order Now", href: "#purchase" },
 }
 
 export const footer = {
