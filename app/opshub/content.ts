@@ -1,22 +1,22 @@
 export const navigation = {
-  logo: "Achra",
+  logo: "Operational Hub",
   services: [
-    { label: "Finance", href: "#services" },
-    { label: "HR", href: "#services" },
-    { label: "Bookkeeping", href: "#services" },
+    { label: "What's Included", href: "/included" },
+    { label: "Swiss Entity", href: "/swiss-entity" },
+    { label: "Pricing", href: "/pricing" },
   ],
-  links: [{ label: "Operational Hub", href: "/opshub", active: true }],
-  cta: { label: "Book a demo", href: "#purchase" },
-  secondaryCta: { label: "Request a needs analysis", href: "#schedule" },
+  links: [],
+  cta: { label: "Book a Call", href: "/contact" },
+  secondaryCta: { label: "See Pricing", href: "/pricing" },
 }
 
 export const hero = {
   title: "Less Admin. More Building",
   subtitle:
     "The Operational Hub is a turnkey solution that runs your back office: invoicing, approvals, payouts, month end close, and reporting, with an operator team so your team stays focused on shipping. It also gives your project a legal shield, member privacy and a compliant bridge to real-world operations in a streamlined entity.",
-  primaryCta: { label: "Schedule a call", href: "#schedule" },
+  primaryCta: { label: "Schedule a call", href: "/contact" },
   secondaryCta: { label: "More info", href: "#faq" },
-  tertiaryCta: { label: "Order Now", href: "#purchase" },
+  tertiaryCta: { label: "See Pricing", href: "/pricing" },
   badges: ["Operator Support", "Invoicing + Approvals", "Global Payouts", "Monthly Close", "Agreement Templates"],
 }
 
@@ -297,13 +297,13 @@ export const faq = {
 export const footerCta = {
   prompt: "Build the product, not the back office.",
   subtitle: "A back office system for global teams, with clean records for reporting and tax filings.",
-  primaryCta: { label: "Schedule a call", href: "#schedule" },
+  primaryCta: { label: "Schedule a call", href: "/contact" },
   secondaryCta: { label: "More info", href: "#faq" },
-  tertiaryCta: { label: "Order Now", href: "#purchase" },
+  tertiaryCta: { label: "See Pricing", href: "/pricing" },
 }
 
 export const footer = {
-  copyright: "© 2026 Achra.",
+  copyright: "© 2026 Operational Hub.",
   disclaimer: "Informational only. Not legal, financial, or tax advice.",
 }
 

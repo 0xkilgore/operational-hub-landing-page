@@ -6,19 +6,25 @@ export default function PricingPage() {
       {/* Header */}
       <header className="border-b border-zinc-800">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2">
             <div className="w-8 h-8 bg-purple-600 rounded-lg" />
-            <span className="font-semibold text-lg">Achra</span>
-          </div>
-          <nav className="flex items-center gap-6">
-            <a href="/opshub" className="text-zinc-400 hover:text-zinc-100 text-sm">
-              Operational Hub
+            <span className="font-semibold text-lg">Operational Hub</span>
+          </a>
+          <nav className="hidden md:flex items-center gap-6">
+            <a href="/included" className="text-zinc-400 hover:text-zinc-100 text-sm">
+              What's Included
+            </a>
+            <a href="/swiss-entity" className="text-zinc-400 hover:text-zinc-100 text-sm">
+              Swiss Entity
+            </a>
+            <a href="/pricing" className="text-zinc-100 text-sm">
+              Pricing
             </a>
             <a
-              href="#"
+              href="/contact"
               className="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
             >
-              Book a Demo
+              Book a Call
             </a>
           </nav>
         </div>
@@ -86,7 +92,7 @@ export default function PricingPage() {
             </ul>
 
             <a
-              href="#"
+              href="/contact"
               className="block w-full text-center border border-zinc-700 hover:border-zinc-500 py-3 rounded-xl font-medium transition-colors"
             >
               Schedule a Call
@@ -150,7 +156,7 @@ export default function PricingPage() {
             </ul>
 
             <a
-              href="#"
+              href="/contact"
               className="block w-full text-center bg-purple-600 hover:bg-purple-700 py-3 rounded-xl font-medium transition-colors"
             >
               Schedule a Call
@@ -200,7 +206,7 @@ export default function PricingPage() {
             </ul>
 
             <a
-              href="#"
+              href="/contact"
               className="block w-full text-center border border-zinc-700 hover:border-zinc-500 py-3 rounded-xl font-medium transition-colors"
             >
               Contact Us
@@ -298,10 +304,10 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Why Achra */}
+      {/* Why Operational Hub */}
       <section className="border-t border-zinc-800 bg-zinc-900/50">
         <div className="max-w-4xl mx-auto px-6 py-16">
-          <h2 className="text-2xl font-bold mb-10 text-center">Why Achra</h2>
+          <h2 className="text-2xl font-bold mb-10 text-center">Why Operational Hub</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -346,14 +352,14 @@ export default function PricingPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#"
+              href="/contact"
               className="bg-purple-600 hover:bg-purple-700 px-8 py-3 rounded-xl font-medium transition-colors inline-flex items-center justify-center gap-2"
             >
               Schedule a Call
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
-              href="/opshub"
+              href="/"
               className="border border-zinc-700 hover:border-zinc-500 px-8 py-3 rounded-xl font-medium transition-colors"
             >
               See How It Works
@@ -368,7 +374,7 @@ export default function PricingPage() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 bg-purple-600 rounded" />
-              <span className="text-sm text-zinc-400">Achra</span>
+              <span className="text-sm text-zinc-400">Operational Hub</span>
             </div>
             <p className="text-xs text-zinc-600">
               This page is for informational purposes only and does not constitute legal or financial advice.

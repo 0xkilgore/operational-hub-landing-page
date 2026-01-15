@@ -1,3 +1,5 @@
+"use client"
+
 import { Clock, MessageCircle, CheckCircle2, Mail } from "lucide-react"
 import { useEffect } from "react"
 
