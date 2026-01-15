@@ -1,8 +1,25 @@
+"use client"
+
 import { Clock, MessageCircle, CheckCircle2, Mail } from "lucide-react"
+import { useEffect } from "react"
+import Cal, { getCalApi } from "@calcom/embed-react"
 import { SharedHeader } from "../_components/SharedHeader"
 import { SharedFooter } from "../_components/SharedFooter"
 
 export default function ContactPage() {
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({ namespace: "30min" })
+      cal("ui", {
+        cssVarsPerTheme: {
+          light: { "cal-brand": "#7A3AFF" }
+        },
+        hideEventTypeDetails: false,
+        layout: "month_view"
+      })
+    })()
+  }, [])
+
   return (
     <div className="min-h-screen bg-white text-gray-900 flex flex-col">
       <SharedHeader currentPage="contact" />
@@ -71,15 +88,12 @@ export default function ContactPage() {
 
           {/* Right Column - Cal Embed */}
           <div className="lg:col-span-3">
-            <div className="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
-              {/* Cal.com iframe embed - replace the src with your actual Cal.com embed URL */}
-              <iframe
-                src="https://cal.com/kilgore-powerhouse-qnre42/30min?embed=true&layout=month_view&theme=light"
-                width="100%"
-                height="700"
-                frameBorder="0"
-                className="min-h-[600px] w-full"
-                title="Schedule a call"
+            <div className="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden min-h-[650px]">
+              <Cal
+                namespace="30min"
+                calLink="kilgore-powerhouse-qnre42/30min"
+                style={{ width: "100%", height: "100%", minHeight: "650px" }}
+                config={{ layout: "month_view" }}
               />
             </div>
           </div>
