@@ -1,117 +1,90 @@
+import { Check, ArrowRight, Building2, Users, CreditCard, FileText, Shield } from "lucide-react"
+
 export function DiagramCard() {
   return (
-    <div className="relative w-full max-w-[460px] overflow-hidden rounded-xl border border-border bg-card p-8 shadow-lg lg:justify-self-end">
-      <div className="flex flex-col items-center gap-7">
-        {/* Multisig Icon */}
-        <div className="flex flex-col items-center gap-2">
-          <div className="flex h-20 w-20 items-center justify-center rounded-lg border border-emerald-500/30 bg-emerald-500/10">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="text-emerald-400"
-            >
-              <rect x="6" y="6" width="8" height="8" rx="2" stroke="currentColor" strokeWidth="2" />
-              <rect x="18" y="6" width="8" height="8" rx="2" stroke="currentColor" strokeWidth="2" />
-              <rect x="12" y="18" width="8" height="8" rx="2" stroke="currentColor" strokeWidth="2" />
-              <line x1="10" y1="14" x2="10" y2="18" stroke="currentColor" strokeWidth="2" />
-              <line x1="22" y1="14" x2="22" y2="18" stroke="currentColor" strokeWidth="2" />
-              <line x1="10" y1="18" x2="16" y2="18" stroke="currentColor" strokeWidth="2" />
-              <line x1="22" y1="18" x2="16" y2="18" stroke="currentColor" strokeWidth="2" />
-            </svg>
+    <div className="relative w-full max-w-[480px] overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-xl lg:justify-self-end">
+      {/* Header */}
+      <div className="border-b border-gray-100 bg-gray-50 px-6 py-4">
+        <div className="flex items-center gap-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[var(--achra)] text-white">
+            <Shield className="h-5 w-5" />
           </div>
-          <span className="text-sm font-medium text-muted-foreground">Multisig</span>
-        </div>
-
-        <div className="flex flex-col items-center gap-1">
-          <div className="h-8 w-px bg-gradient-to-b from-emerald-500/50 to-[var(--achra)]/50" />
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="text-[var(--achra)]"
-          >
-            <path
-              d="M8 2L8 14M8 14L3 9M8 14L13 9"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </div>
-
-        {/* Shield Icon */}
-        <div className="flex flex-col items-center gap-2">
-          <div className="flex h-24 w-24 items-center justify-center rounded-lg border border-[var(--achra)]/30 bg-[var(--achra)]/10">
-            <svg
-              width="48"
-              height="48"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="text-[var(--achra)]"
-            >
-              <path
-                d="M20 4L8 9V18C8 26 12 32 20 36C28 32 32 26 32 18V9L20 4Z"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M20 13V23M20 23L25 18M20 23L15 18"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+          <div>
+            <p className="text-sm font-semibold text-gray-900">Your Operational Hub</p>
+            <p className="text-xs text-gray-500">Swiss Association • Active</p>
           </div>
-          <span className="text-center text-sm font-medium text-[var(--achra)]">Swiss Association Shield</span>
-        </div>
-
-        <div className="flex flex-col items-center gap-1">
-          <div className="h-8 w-px bg-gradient-to-b from-[var(--achra)]/50 to-blue-500/50" />
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="text-blue-400"
-          >
-            <path
-              d="M8 2L8 14M8 14L3 9M8 14L13 9"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </div>
-
-        {/* Real-world Rails */}
-        <div className="flex flex-col items-center gap-2">
-          <div className="flex h-20 w-20 items-center justify-center rounded-lg border border-blue-500/30 bg-blue-500/10">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="text-blue-400"
-            >
-              <circle cx="16" cy="16" r="10" stroke="currentColor" strokeWidth="2" />
-              <line x1="6" y1="16" x2="26" y2="16" stroke="currentColor" strokeWidth="2" />
-              <line x1="16" y1="6" x2="16" y2="26" stroke="currentColor" strokeWidth="2" />
-            </svg>
+          <div className="ml-auto flex items-center gap-1.5">
+            <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
+            <span className="text-xs text-emerald-600 font-medium">Live</span>
           </div>
-          <span className="text-center text-sm font-medium text-muted-foreground">Real-world rails</span>
+        </div>
+      </div>
+
+      {/* Dashboard Preview */}
+      <div className="p-6 space-y-5">
+        {/* Stats Row */}
+        <div className="grid grid-cols-3 gap-3">
+          <div className="rounded-lg bg-gray-50 p-3 text-center">
+            <p className="text-lg font-bold text-gray-900">$47.2k</p>
+            <p className="text-xs text-gray-500">This month</p>
+          </div>
+          <div className="rounded-lg bg-gray-50 p-3 text-center">
+            <p className="text-lg font-bold text-gray-900">8</p>
+            <p className="text-xs text-gray-500">Contributors</p>
+          </div>
+          <div className="rounded-lg bg-gray-50 p-3 text-center">
+            <p className="text-lg font-bold text-emerald-600">100%</p>
+            <p className="text-xs text-gray-500">Compliant</p>
+          </div>
+        </div>
+
+        {/* Recent Activity */}
+        <div className="space-y-3">
+          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Recent Activity</p>
+
+          <div className="space-y-2">
+            <div className="flex items-center gap-3 rounded-lg border border-gray-100 bg-white p-3">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100">
+                <Check className="h-4 w-4 text-emerald-600" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-medium text-gray-900 truncate">Invoice #1042 paid</p>
+                <p className="text-xs text-gray-500">dev@contributor.eth • $4,200</p>
+              </div>
+              <span className="text-xs text-gray-400">2h ago</span>
+            </div>
+
+            <div className="flex items-center gap-3 rounded-lg border border-gray-100 bg-white p-3">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-100">
+                <FileText className="h-4 w-4 text-blue-600" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-medium text-gray-900 truncate">Agreement signed</p>
+                <p className="text-xs text-gray-500">New contributor onboarded</p>
+              </div>
+              <span className="text-xs text-gray-400">5h ago</span>
+            </div>
+
+            <div className="flex items-center gap-3 rounded-lg border border-gray-100 bg-white p-3">
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--achra)]/10">
+                <CreditCard className="h-4 w-4 text-[var(--achra)]" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-medium text-gray-900 truncate">Payroll processed</p>
+                <p className="text-xs text-gray-500">8 contributors • $38,400</p>
+              </div>
+              <span className="text-xs text-gray-400">1d ago</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Banner */}
+        <div className="flex items-center justify-between rounded-lg bg-gradient-to-r from-[var(--achra)]/5 to-[var(--achra)]/10 p-3 border border-[var(--achra)]/10">
+          <div className="flex items-center gap-2">
+            <Users className="h-4 w-4 text-[var(--achra)]" />
+            <span className="text-sm text-gray-700">Your ops team is handling it</span>
+          </div>
+          <ArrowRight className="h-4 w-4 text-[var(--achra)]" />
         </div>
       </div>
     </div>
