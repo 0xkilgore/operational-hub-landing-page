@@ -1,13 +1,12 @@
 export const navigation = {
-  logo: "Operational Hub",
-  services: [
+  logo: "Achra",
+  productLabel: "Operational Hub",
+  links: [
     { label: "What's Included", href: "/included" },
     { label: "Swiss Entity", href: "/swiss-entity" },
     { label: "Pricing", href: "/pricing" },
   ],
-  links: [],
   cta: { label: "Book a Call", href: "/contact" },
-  secondaryCta: { label: "See Pricing", href: "/pricing" },
 }
 
 export const hero = {
@@ -303,7 +302,7 @@ export const footerCta = {
 }
 
 export const footer = {
-  copyright: "© 2026 Operational Hub.",
+  copyright: "© 2026 Achra.",
   disclaimer: "Informational only. Not legal, financial, or tax advice.",
 }
 

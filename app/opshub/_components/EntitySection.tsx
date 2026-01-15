@@ -1,7 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronDownIcon } from "lucide-react"
+import Link from "next/link"
+import { ChevronDownIcon, ArrowRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
 import { entitySection } from "../content"
 
 export function EntitySection() {
@@ -61,6 +63,20 @@ export function EntitySection() {
         {/* Jurisdiction Note */}
         <div className="text-center">
           <p className="text-sm italic text-muted-foreground/80">{entitySection.jurisdictionNote}</p>
+        </div>
+
+        {/* CTA */}
+        <div className="pt-6 text-center">
+          <Button
+            asChild
+            variant="outline"
+            className="border-[var(--achra)] text-[var(--achra)] hover:bg-[var(--achra)] hover:text-white"
+          >
+            <Link href="/swiss-entity" className="inline-flex items-center gap-2">
+              Learn more about Swiss entities
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </Button>
         </div>
       </div>
     </div>

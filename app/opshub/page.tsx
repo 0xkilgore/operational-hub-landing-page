@@ -7,7 +7,7 @@ import { Section } from "./_components/Section"
 import { FAQ } from "./_components/FAQ"
 import { EntitySection } from "./_components/EntitySection"
 import { problem, audience, benefits, whatYouGet, howItWorks, ownership, footerCta, footer } from "./content"
-import { Zap, Shield, Users, FileText, Workflow } from "lucide-react"
+import { Zap, Shield, Users, FileText, Workflow, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Operational Hub",
@@ -148,6 +148,20 @@ export default function OperationalHubPage() {
                 </div>
               ))}
             </div>
+          </div>
+
+          {/* CTA */}
+          <div className="pt-4 text-center">
+            <Button
+              asChild
+              variant="outline"
+              className="border-[var(--achra)] text-[var(--achra)] hover:bg-[var(--achra)] hover:text-white"
+            >
+              <Link href="/included" className="inline-flex items-center gap-2">
+                See what's included
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
           </div>
         </div>
       </Section>
