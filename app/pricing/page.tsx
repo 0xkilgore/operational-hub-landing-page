@@ -1,4 +1,4 @@
-import { Check, ArrowRight, Users, Building, Briefcase } from "lucide-react"
+import { Check, ArrowRight, Users, Building, Briefcase, Sparkles, Plus, FileText, CreditCard, UserPlus, Headphones } from "lucide-react"
 import { SharedHeader } from "../_components/SharedHeader"
 import { SharedFooter } from "../_components/SharedFooter"
 
@@ -10,7 +10,7 @@ export default function PricingPage() {
       {/* Hero */}
       <section className="max-w-4xl mx-auto px-6 py-20 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
-          One monthly fee.<br />Zero operational headaches.
+          Transparent pricing.<br />No surprises.
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           Your entity, your control. We handle the legal setup, accounting, payroll, and compliance—so you can focus on building.
@@ -18,33 +18,76 @@ export default function PricingPage() {
       </section>
 
       {/* Pricing Cards */}
-      <section className="max-w-5xl mx-auto px-6 pb-20">
-        <div className="grid md:grid-cols-3 gap-6">
+      <section className="max-w-6xl mx-auto px-6 pb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-          {/* Starter */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col shadow-sm">
+          {/* Free */}
+          <div className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col shadow-sm">
             <div className="mb-6">
-              <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
-                <Building className="w-6 h-6 text-gray-500" />
+              <div className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
+                <Sparkles className="w-5 h-5 text-gray-500" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Starter</h3>
+              <h3 className="text-lg font-semibold mb-2">Free</h3>
               <p className="text-gray-500 text-sm">
-                For grant recipients and minimal-operations teams
+                Explore what's possible
               </p>
             </div>
 
             <div className="mb-6">
               <div className="flex items-baseline gap-1">
-                <span className="text-4xl font-bold">$750</span>
-                <span className="text-gray-500">/month</span>
+                <span className="text-3xl font-bold">$0</span>
               </div>
-              <p className="text-gray-400 text-sm mt-1">+ $2,500 one-time setup</p>
+              <p className="text-gray-400 text-sm mt-1">No commitment</p>
             </div>
 
             <ul className="space-y-3 mb-8 flex-grow">
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Swiss association entity (you own it)</span>
+                <span className="text-sm text-gray-700">Invoice management tools</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
+                <span className="text-sm text-gray-700">Legal document templates</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
+                <span className="text-sm text-gray-700">Platform access</span>
+              </li>
+            </ul>
+
+            <a
+              href="https://connect.acra.io"
+              className="block w-full text-center border border-gray-300 hover:border-gray-400 py-3 rounded-xl font-medium transition-colors text-gray-700 hover:text-gray-900"
+            >
+              Get Started
+            </a>
+          </div>
+
+          {/* Starter */}
+          <div className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col shadow-sm">
+            <div className="mb-6">
+              <div className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
+                <Building className="w-5 h-5 text-gray-500" />
+              </div>
+              <h3 className="text-lg font-semibold mb-2">Starter</h3>
+              <p className="text-gray-500 text-sm">
+                For grant recipients and low-volume teams
+              </p>
+            </div>
+
+            <div className="mb-6">
+              <div className="flex items-baseline gap-1">
+                <span className="text-3xl font-bold">$750</span>
+                <span className="text-gray-500">/month</span>
+              </div>
+              <p className="text-gray-500 text-sm mt-1">+ per-invoice fee</p>
+              <p className="text-gray-400 text-sm mt-1">+ one-time setup</p>
+            </div>
+
+            <ul className="space-y-3 mb-8 flex-grow">
+              <li className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
+                <span className="text-sm text-gray-700">Swiss association entity</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
@@ -52,19 +95,15 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Basic bookkeeping & expense tracking</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
                 <span className="text-sm text-gray-700">Annual tax filing</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Quarterly financial summary</span>
+                <span className="text-sm text-gray-700">Basic bookkeeping</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Connection to legal partners</span>
+                <span className="text-sm text-gray-700">Invoice processing</span>
               </li>
             </ul>
 
@@ -77,28 +116,28 @@ export default function PricingPage() {
           </div>
 
           {/* Standard - Featured */}
-          <div className="bg-white border-2 border-[rgb(122,58,255)] rounded-2xl p-8 flex flex-col relative shadow-md">
+          <div className="bg-white border-2 border-[rgb(122,58,255)] rounded-2xl p-6 flex flex-col relative shadow-md">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[rgb(122,58,255)] text-white text-xs font-semibold px-3 py-1 rounded-full">
               Most Popular
             </div>
 
             <div className="mb-6">
-              <div className="w-12 h-12 bg-[rgb(122,58,255)]/10 rounded-xl flex items-center justify-center mb-4">
-                <Users className="w-6 h-6 text-[rgb(122,58,255)]" />
+              <div className="w-10 h-10 bg-[rgb(122,58,255)]/10 rounded-xl flex items-center justify-center mb-4">
+                <Users className="w-5 h-5 text-[rgb(122,58,255)]" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Standard</h3>
+              <h3 className="text-lg font-semibold mb-2">Standard</h3>
               <p className="text-gray-500 text-sm">
-                For builder teams with regular contributors
+                For teams with regular contributors
               </p>
             </div>
 
             <div className="mb-6">
               <div className="flex items-baseline gap-1">
-                <span className="text-4xl font-bold">$750</span>
+                <span className="text-3xl font-bold">$750</span>
                 <span className="text-gray-500">/month</span>
               </div>
-              <p className="text-[rgb(122,58,255)] text-sm mt-1 font-medium">+ $500 per contributor</p>
-              <p className="text-gray-400 text-sm mt-1">+ $3,000 one-time setup</p>
+              <p className="text-[rgb(122,58,255)] text-sm mt-1 font-medium">+ $500 per seat</p>
+              <p className="text-gray-400 text-sm mt-1">+ one-time setup</p>
             </div>
 
             <ul className="space-y-3 mb-8 flex-grow">
@@ -108,19 +147,15 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Full monthly accounting & reconciliation</span>
+                <span className="text-sm text-gray-700">Full monthly accounting</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Contributor onboarding & agreements</span>
+                <span className="text-sm text-gray-700">Contributor onboarding</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Invoice processing & approvals</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Multi-currency payouts (fiat + stablecoin)</span>
+                <span className="text-sm text-gray-700">Multi-currency payouts</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
@@ -141,22 +176,22 @@ export default function PricingPage() {
           </div>
 
           {/* Custom */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col shadow-sm">
+          <div className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col shadow-sm">
             <div className="mb-6">
-              <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
-                <Briefcase className="w-6 h-6 text-gray-500" />
+              <div className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
+                <Briefcase className="w-5 h-5 text-gray-500" />
               </div>
-              <h3 className="text-xl font-semibold mb-2">Custom</h3>
+              <h3 className="text-lg font-semibold mb-2">Custom</h3>
               <p className="text-gray-500 text-sm">
-                For complex structures or high-volume operations
+                For complex or high-volume operations
               </p>
             </div>
 
             <div className="mb-6">
               <div className="flex items-baseline gap-1">
-                <span className="text-4xl font-bold">Custom</span>
+                <span className="text-3xl font-bold">Custom</span>
               </div>
-              <p className="text-gray-400 text-sm mt-1">Setup from $4,000</p>
+              <p className="text-gray-400 text-sm mt-1">Tailored to your needs</p>
             </div>
 
             <ul className="space-y-3 mb-8 flex-grow">
@@ -170,7 +205,7 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Custom reporting requirements</span>
+                <span className="text-sm text-gray-700">Custom reporting</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
@@ -190,35 +225,207 @@ export default function PricingPage() {
             </a>
           </div>
         </div>
+
+        {/* Self-service note */}
+        <p className="text-center text-gray-500 text-sm mt-8">
+          Prefer to explore on your own? <a href="https://connect.acra.io" className="text-[rgb(122,58,255)] hover:underline">Try the platform free</a> or <a href="/included" className="text-[rgb(122,58,255)] hover:underline">see what's included</a>.
+        </p>
+      </section>
+
+      {/* Detailed Tier Comparison */}
+      <section className="border-t border-gray-200 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-6 py-16">
+          <h2 className="text-2xl font-bold mb-4 text-center">What's included in each tier</h2>
+          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+            A detailed breakdown of what you get at each level.
+          </p>
+
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-gray-200">
+                  <th className="text-left py-4 px-4 font-semibold text-gray-900">Feature</th>
+                  <th className="text-center py-4 px-4 font-semibold text-gray-500">Free</th>
+                  <th className="text-center py-4 px-4 font-semibold text-gray-900">Starter</th>
+                  <th className="text-center py-4 px-4 font-semibold text-[rgb(122,58,255)]">Standard</th>
+                  <th className="text-center py-4 px-4 font-semibold text-gray-900">Custom</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr>
+                  <td className="py-3 px-4 text-gray-700">Swiss association entity</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
+                <tr className="bg-white">
+                  <td className="py-3 px-4 text-gray-700">Registered address (Zug)</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 text-gray-700">Invoice management</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
+                <tr className="bg-white">
+                  <td className="py-3 px-4 text-gray-700">Legal document templates</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 text-gray-700">Annual tax filing</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
+                <tr className="bg-white">
+                  <td className="py-3 px-4 text-gray-700">Monthly accounting & close</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 text-gray-700">Contributor operations</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
+                <tr className="bg-white">
+                  <td className="py-3 px-4 text-gray-700">Multi-currency payouts</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 text-gray-700">Dedicated ops support</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
+                <tr className="bg-white">
+                  <td className="py-3 px-4 text-gray-700">Multiple entities</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4 text-gray-700">Dedicated account manager</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center text-gray-400">-</td>
+                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Add-ons Section */}
+      <section className="border-t border-gray-200">
+        <div className="max-w-4xl mx-auto px-6 py-16">
+          <h2 className="text-2xl font-bold mb-4 text-center">Available add-ons</h2>
+          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+            Extend your plan with additional services as you grow.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-[rgb(122,58,255)]/10 rounded-lg flex items-center justify-center">
+                  <UserPlus className="w-5 h-5 text-[rgb(122,58,255)]" />
+                </div>
+                <h3 className="font-semibold">Contributor onboarding</h3>
+              </div>
+              <p className="text-sm text-gray-600">
+                Full onboarding for new contributors including KYC, documentation collection, payment setup, and agreement execution.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-[rgb(122,58,255)]/10 rounded-lg flex items-center justify-center">
+                  <FileText className="w-5 h-5 text-[rgb(122,58,255)]" />
+                </div>
+                <h3 className="font-semibold">Payroll processing</h3>
+              </div>
+              <p className="text-sm text-gray-600">
+                Managed payroll for regular contributors with automated scheduling, tax documentation, and multi-currency support.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-[rgb(122,58,255)]/10 rounded-lg flex items-center justify-center">
+                  <CreditCard className="w-5 h-5 text-[rgb(122,58,255)]" />
+                </div>
+                <h3 className="font-semibold">Credit card assistance</h3>
+              </div>
+              <p className="text-sm text-gray-600">
+                Corporate card setup and management for authorized team expenses with spending controls and reconciliation.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 bg-[rgb(122,58,255)]/10 rounded-lg flex items-center justify-center">
+                  <Headphones className="w-5 h-5 text-[rgb(122,58,255)]" />
+                </div>
+                <h3 className="font-semibold">Legal partner access</h3>
+              </div>
+              <p className="text-sm text-gray-600">
+                Direct access to vetted Swiss legal counsel for contract review, regulatory questions, and specialized advice.
+              </p>
+            </div>
+          </div>
+
+          <p className="text-center text-gray-500 text-sm mt-8">
+            Add-ons are available with any paid plan. <a href="/contact" className="text-[rgb(122,58,255)] hover:underline">Contact us</a> for details.
+          </p>
+        </div>
       </section>
 
       {/* Contributor Explainer */}
       <section className="border-t border-gray-200 bg-gray-50">
         <div className="max-w-3xl mx-auto px-6 py-16">
-          <h2 className="text-2xl font-bold mb-8 text-center">How contributor pricing works</h2>
+          <h2 className="text-2xl font-bold mb-8 text-center">How per-seat pricing works</h2>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-              <h3 className="font-semibold mb-3 text-[rgb(122,58,255)]">What counts as a contributor</h3>
+              <h3 className="font-semibold mb-3 text-[rgb(122,58,255)]">What counts as a seat</h3>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li>• Permanent, paid team members</li>
-                <li>• Anyone with a contributor agreement</li>
-                <li>• People who invoice monthly</li>
+                <li>Permanent, paid team members</li>
+                <li>Anyone with a contributor agreement</li>
+                <li>People who invoice monthly</li>
               </ul>
             </div>
 
             <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
               <h3 className="font-semibold mb-3 text-gray-500">What doesn't count</h3>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li>• One-time vendors or contractors</li>
-                <li>• Unpaid contributors or advisors</li>
-                <li>• Grant recipients you're funding</li>
+                <li>One-time vendors or contractors</li>
+                <li>Unpaid contributors or advisors</li>
+                <li>Grant recipients you're funding</li>
               </ul>
             </div>
           </div>
 
           <p className="text-center text-gray-500 text-sm mt-6">
-            Add or remove contributors anytime. Billing adjusts automatically.
+            Add or remove seats anytime. Billing adjusts automatically.
           </p>
         </div>
       </section>
@@ -239,7 +446,7 @@ export default function PricingPage() {
             <div className="border-b border-gray-200 pb-6">
               <h3 className="font-semibold mb-2">Do I still need to hire an accountant?</h3>
               <p className="text-gray-600 text-sm">
-                No. Accounting is included. Our team handles bookkeeping, reconciliation, and reporting.
+                No. Accounting is included in Standard. Our team handles bookkeeping, reconciliation, and reporting. Starter includes basic bookkeeping with annual filings.
               </p>
             </div>
 
@@ -251,9 +458,9 @@ export default function PricingPage() {
             </div>
 
             <div className="border-b border-gray-200 pb-6">
-              <h3 className="font-semibold mb-2">What if I'm too small for this?</h3>
+              <h3 className="font-semibold mb-2">What's the difference between Starter and Standard?</h3>
               <p className="text-gray-600 text-sm">
-                Start with Starter—no permanent contributors required. It's designed for teams receiving grants or with minimal payout activity. Upgrade to Standard when you grow.
+                Starter includes entity setup and annual filings—great for grant recipients with minimal monthly activity. Standard adds full monthly accounting, contributor operations, and ongoing support for teams with regular payroll.
               </p>
             </div>
 
@@ -264,17 +471,10 @@ export default function PricingPage() {
               </p>
             </div>
 
-            <div className="border-b border-gray-200 pb-6">
+            <div className="pb-6">
               <h3 className="font-semibold mb-2">What currencies do you support?</h3>
               <p className="text-gray-600 text-sm">
                 Fiat (USD, EUR, CHF, GBP) and stablecoins (USDC, DAI). We handle the conversions.
-              </p>
-            </div>
-
-            <div className="pb-6">
-              <h3 className="font-semibold mb-2">What's the commitment?</h3>
-              <p className="text-gray-600 text-sm">
-                Month-to-month after the first 3 months. Setup fee is non-refundable.
               </p>
             </div>
           </div>
@@ -289,7 +489,7 @@ export default function PricingPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-12 h-12 bg-[rgb(122,58,255)]/10 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🔑</span>
+                <span className="text-2xl">&#128273;</span>
               </div>
               <h3 className="font-semibold mb-2">You own it</h3>
               <p className="text-gray-600 text-sm">
@@ -299,7 +499,7 @@ export default function PricingPage() {
 
             <div className="text-center">
               <div className="w-12 h-12 bg-[rgb(122,58,255)]/10 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">⚙️</span>
+                <span className="text-2xl">&#9881;</span>
               </div>
               <h3 className="font-semibold mb-2">We operate it</h3>
               <p className="text-gray-600 text-sm">
@@ -309,11 +509,11 @@ export default function PricingPage() {
 
             <div className="text-center">
               <div className="w-12 h-12 bg-[rgb(122,58,255)]/10 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🛠️</span>
+                <span className="text-2xl">&#128736;</span>
               </div>
-              <h3 className="font-semibold mb-2">Built for builders</h3>
+              <h3 className="font-semibold mb-2">Transparent pricing</h3>
               <p className="text-gray-600 text-sm">
-                Stablecoin payroll, multi-sig treasuries, global contributors. We get crypto-native teams.
+                No hidden fees, no surprises. We believe in straightforward pricing you can trust.
               </p>
             </div>
           </div>
@@ -325,7 +525,7 @@ export default function PricingPage() {
         <div className="max-w-3xl mx-auto px-6 py-20 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to stop doing ops as a side job?</h2>
           <p className="text-gray-600 mb-8">
-            Not sure which plan fits? Let's figure it out together.
+            Not sure which plan fits? Let's figure it out together—or explore the platform on your own.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -336,10 +536,10 @@ export default function PricingPage() {
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
-              href="/"
+              href="https://connect.acra.io"
               className="border border-gray-300 hover:border-gray-400 px-8 py-3 rounded-xl font-medium transition-colors text-gray-700"
             >
-              See How It Works
+              Try Free
             </a>
           </div>
         </div>
