@@ -439,7 +439,7 @@ export default function PricingPage() {
             <div className="border-b border-gray-200 pb-6">
               <h3 className="font-semibold mb-2">Why is this more expensive than other payroll tools?</h3>
               <p className="text-gray-600 text-sm">
-                Tools like Franklin give you software—you still do the accounting, tax filing, and compliance yourself. We do the actual work. Your books are closed, taxes are filed, and payroll runs without you lifting a finger.
+                Most payroll tools give you software—you still do the accounting, tax filing, and compliance yourself. We do the actual work. Your books are closed, taxes are filed, and payroll runs without you lifting a finger.
               </p>
             </div>
 
