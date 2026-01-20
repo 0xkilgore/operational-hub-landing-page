@@ -14,7 +14,8 @@ export const hero = {
   subtitle:
     "A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting—handled by an operator team—plus a legal entity for contracts and member privacy.",
   primaryCta: { label: "Schedule a call", href: "/contact" },
-  secondaryCta: { label: "See Pricing", href: "/pricing" },
+  secondaryCta: { label: "Try the platform free", href: "https://connect.powerhouse.xyz/" },
+  tertiaryCta: { label: "See Pricing", href: "/pricing" },
   badges: ["Operator Support", "Invoicing + Approvals", "Global Payouts", "Monthly Close", "Agreement Templates"],
 }
 

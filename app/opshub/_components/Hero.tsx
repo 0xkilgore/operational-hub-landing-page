@@ -43,6 +43,14 @@ export function Hero() {
               >
                 <Link href={hero.secondaryCta.href}>{hero.secondaryCta.label}</Link>
               </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                asChild
+                className="hover:border-[var(--achra)]/50 hover:text-[var(--achra)] focus-visible:ring-[var(--achra)]/30 bg-transparent"
+              >
+                <Link href={hero.tertiaryCta.href}>{hero.tertiaryCta.label}</Link>
+              </Button>
             </div>
 
             {/* Proof Badges */}
