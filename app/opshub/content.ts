@@ -12,10 +12,9 @@ export const navigation = {
 export const hero = {
   title: "Less Admin. More Building",
   subtitle:
-    "The Operational Hub is a turnkey solution that runs your back office: invoicing, approvals, payouts, month end close, and reporting, with an operator team so your team stays focused on shipping. It also gives your project a legal shield, member privacy and a compliant bridge to real-world operations in a streamlined entity.",
+    "A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting—handled by an operator team—plus a legal entity for contracts and member privacy.",
   primaryCta: { label: "Schedule a call", href: "/contact" },
-  secondaryCta: { label: "More info", href: "#faq" },
-  tertiaryCta: { label: "See Pricing", href: "/pricing" },
+  secondaryCta: { label: "See Pricing", href: "/pricing" },
   badges: ["Operator Support", "Invoicing + Approvals", "Global Payouts", "Monthly Close", "Agreement Templates"],
 }
 
@@ -297,13 +296,28 @@ export const footerCta = {
   prompt: "Build the product, not the back office.",
   subtitle: "A back office system for global teams, with clean records for reporting and tax filings.",
   primaryCta: { label: "Schedule a call", href: "/contact" },
-  secondaryCta: { label: "More info", href: "#faq" },
+  secondaryCta: { label: "Try the platform free", href: "https://connect.powerhouse.xyz/" },
   tertiaryCta: { label: "See Pricing", href: "/pricing" },
 }
 
 export const footer = {
   copyright: "© 2026 Achra.",
   disclaimer: "Informational only. Not legal, financial, or tax advice.",
+}
+
+export const achraPlatform = {
+  tagline: "Part of something bigger",
+  title: "Built on the Achra platform",
+  subtitle: "The marketplace for global coordination",
+  description:
+    "Powerhouse is building Achra—a platform that connects the tools organizations need to operate globally. The Operational Hub is your foundation: a legal entity, back office workflows, and an operator team. As the platform grows, you'll be able to manage workstreams, find builders and service providers, coordinate treasury, and run governance—all designed to work together.",
+  features: [
+    "Manage workstreams and coordinate distributed teams",
+    "Find and engage builders, contractors, and service providers",
+    "Integrated tooling for operations, governance, and treasury",
+    "Modular platform that grows with your organization",
+  ],
+  cta: { label: "Learn more about Powerhouse", href: "https://www.powerhousesno.org" },
 }
 
 export const differentiation = {

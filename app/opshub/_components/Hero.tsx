@@ -22,7 +22,9 @@ export function Hero() {
           <div className="flex flex-col justify-start space-y-6 lg:col-span-7">
             <div className="space-y-6">
               <h1 className="text-balance text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">{hero.title}</h1>
-              <p className="text-pretty text-lg text-muted-foreground md:text-xl pl-2 lg:pl-4">{hero.subtitle}</p>
+              <p className="text-pretty text-lg text-muted-foreground md:text-xl mt-2">
+                A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting—handled by an operator team—plus a legal entity for contracts and member privacy.
+              </p>
             </div>
 
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -40,14 +42,6 @@ export function Hero() {
                 className="hover:border-[var(--achra)]/50 hover:text-[var(--achra)] focus-visible:ring-[var(--achra)]/30 bg-transparent"
               >
                 <Link href={hero.secondaryCta.href}>{hero.secondaryCta.label}</Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                asChild
-                className="hover:border-[var(--achra)]/50 hover:text-[var(--achra)] focus-visible:ring-[var(--achra)]/30 bg-transparent"
-              >
-                <Link href={hero.tertiaryCta.href}>{hero.tertiaryCta.label}</Link>
               </Button>
             </div>
 

@@ -6,7 +6,7 @@ import { Hero } from "./_components/Hero"
 import { Section } from "./_components/Section"
 import { FAQ } from "./_components/FAQ"
 import { EntitySection } from "./_components/EntitySection"
-import { problem, audience, benefits, whatYouGet, howItWorks, ownership, footerCta, footer } from "./content"
+import { problem, audience, benefits, whatYouGet, howItWorks, ownership, footerCta, footer, achraPlatform } from "./content"
 import {
   Zap, Shield, Users, FileText, Workflow, ArrowRight,
   Clock, Code, Lock, CheckCircle2, Sparkles,
@@ -69,6 +69,15 @@ export default function OperationalHubPage() {
                 </div>
               )
             })}
+          </div>
+          {/* CTAs */}
+          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center pt-4">
+            <Button size="lg" asChild className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white">
+              <Link href="/pricing">See Pricing</Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild className="border-gray-300 hover:border-[var(--achra)] hover:text-[var(--achra)]">
+              <Link href="/contact">Book a Call</Link>
+            </Button>
           </div>
         </div>
       </Section>
@@ -143,6 +152,15 @@ export default function OperationalHubPage() {
               )
             })}
           </div>
+          {/* CTA */}
+          <div className="pt-4 text-center">
+            <Button size="lg" asChild className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white">
+              <Link href="/included" className="inline-flex items-center gap-2">
+                Explore the capabilities of an Operational Hub
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </Section>
 
@@ -164,9 +182,9 @@ export default function OperationalHubPage() {
 
           {/* Steps */}
           <div className="mx-auto max-w-3xl">
-            <div className="relative space-y-6">
-              {/* Connecting line */}
-              <div className="absolute left-7 top-10 bottom-10 w-0.5 bg-gradient-to-b from-[var(--achra)] via-[var(--achra)]/50 to-emerald-500 md:left-9" />
+            <div className="relative space-y-6 overflow-hidden pb-1">
+              {/* Connecting line - ends at step 3 circle center */}
+              <div className="absolute left-7 top-7 w-0.5 bg-gradient-to-b from-[var(--achra)] via-blue-500 to-emerald-500 md:left-9" style={{ height: 'calc(100% - 5rem)' }} />
 
               {howItWorks.steps.map((step, index) => {
                 const stepColors = [
@@ -274,12 +292,59 @@ export default function OperationalHubPage() {
               </div>
             </div>
           </div>
+          {/* CTAs */}
+          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center pt-4">
+            <Button size="lg" asChild className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white">
+              <Link href="/contact">Schedule a Call</Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild className="border-gray-300 hover:border-[var(--achra)] hover:text-[var(--achra)]">
+              <Link href="/pricing">See Pricing</Link>
+            </Button>
+          </div>
         </div>
       </Section>
 
       {/* FAQ Section */}
       <Section id="faq" className="border-b border-border bg-gray-50/50">
         <FAQ />
+      </Section>
+
+      {/* Achra Platform Section */}
+      <Section id="achra-platform" className="border-b border-border">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
+            {/* Left: Headline and subhead */}
+            <div className="space-y-6">
+              <span className="inline-flex items-center rounded-full bg-[var(--achra)]/10 px-3 py-1 text-xs font-medium text-[var(--achra)]">
+                {achraPlatform.tagline}
+              </span>
+              <h2 className="text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">{achraPlatform.title}</h2>
+              <p className="text-xl text-[var(--achra)] font-medium">{achraPlatform.subtitle}</p>
+              <div className="pt-2">
+                <Button size="lg" asChild className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white">
+                  <a href={achraPlatform.cta.href} className="inline-flex items-center gap-2">
+                    {achraPlatform.cta.label}
+                    <ArrowRight className="h-4 w-4" />
+                  </a>
+                </Button>
+              </div>
+            </div>
+            {/* Right: Description and features */}
+            <div className="space-y-6">
+              <p className="text-base leading-relaxed text-muted-foreground">
+                {achraPlatform.description}
+              </p>
+              <ul className="space-y-3">
+                {achraPlatform.features.map((feature, index) => (
+                  <li key={index} className="flex items-center gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-[var(--achra)] shrink-0" />
+                    <span className="text-sm text-gray-700">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
       </Section>
 
       {/* Footer CTA Section */}

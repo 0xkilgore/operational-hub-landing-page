@@ -29,9 +29,9 @@ export function Navigation() {
       <div className="container mx-auto flex h-16 max-w-6xl items-center justify-between px-4 md:px-6">
         {/* Logo + Product Label */}
         <div className="flex items-center gap-3">
-          <Link href="/" className="flex items-center">
+          <a href="https://www.achra.com" className="flex items-center">
             <Image src="/brand/achra-logo.png" alt="Achra" width={120} height={32} className="h-7 w-auto" priority />
-          </Link>
+          </a>
           <span className="hidden text-sm font-medium text-gray-500 sm:inline">Operational Hub</span>
         </div>
 
