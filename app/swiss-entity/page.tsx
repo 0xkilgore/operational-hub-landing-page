@@ -22,7 +22,7 @@ export default function SwissEntityPage() {
           Your entity.<br />Swiss precision.
         </h1>
         <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-          A Swiss association gives your team a real legal home—with privacy, flexibility, and a framework built for international builder teams.
+          A Swiss association gives your team a real legal home with privacy, flexibility, and a framework built for international builder teams.
         </p>
       </section>
 
@@ -31,7 +31,7 @@ export default function SwissEntityPage() {
         <div className="max-w-4xl mx-auto px-6 py-16">
           <h2 className="text-2xl font-bold mb-4">What is a Swiss Association?</h2>
           <p className="text-gray-500 mb-6">
-            A Swiss association (Verein) is a legally recognized entity under Swiss law. It can own assets, enter contracts, and act in its own name—giving your team a proper legal structure without the complexity of a corporation.
+            A Swiss association (Verein) is a legally recognized entity under Swiss law. It can own assets, enter contracts, and act in its own name, giving your team a proper legal structure without the complexity of a corporation.
           </p>
           <p className="text-gray-500">
             Unlike corporations, associations are formed through member agreements rather than public filings. This means your team maintains control and privacy while gaining the legal protections of a formal entity.
