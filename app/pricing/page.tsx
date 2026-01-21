@@ -19,7 +19,7 @@ export default function PricingPage() {
           Transparent pricing.<br />No surprises.
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Your entity, your control. We handle the legal setup, accounting, payroll, and compliance—so you can focus on building.
+          Your entity, your control. We handle the legal setup, accounting, payroll, and compliance so you can focus on building.
         </p>
       </section>
 
@@ -390,7 +390,7 @@ export default function PricingPage() {
             <div className="border-b border-gray-200 pb-6">
               <h3 className="font-semibold mb-2">Why is this more expensive than other payroll tools?</h3>
               <p className="text-gray-600 text-sm">
-                Most payroll tools give you software—you still do the accounting, tax filing, and compliance yourself. We do the actual work. Your books are closed, taxes are filed, and payroll runs without you lifting a finger.
+                Most payroll tools give you software. You still do the accounting, tax filing, and compliance yourself. We do the actual work. Your books are closed, taxes are filed, and payroll runs without you lifting a finger.
               </p>
             </div>
 
@@ -411,7 +411,7 @@ export default function PricingPage() {
             <div className="border-b border-gray-200 pb-6">
               <h3 className="font-semibold mb-2">What's the difference between Starter and Standard?</h3>
               <p className="text-gray-600 text-sm">
-                Starter includes entity setup and annual filings—great for grant recipients with minimal monthly activity. Standard adds full monthly accounting, contributor operations, and ongoing support for teams with regular payroll.
+                Starter includes entity setup and annual filings, great for grant recipients with minimal monthly activity. Standard adds full monthly accounting, contributor operations, and ongoing support for teams with regular payroll.
               </p>
             </div>
 

@@ -22,7 +22,7 @@ export default function WhatsIncludedPage() {
           Your back office,<br />handled.
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          We don't just give you tools—we do the work. Accounting, payroll, compliance, and admin, all taken care of so you can focus on building.
+          We don't just give you tools. We do the work. Accounting, payroll, compliance, and admin, all taken care of so you can focus on building.
         </p>
       </section>
 
@@ -40,7 +40,7 @@ export default function WhatsIncludedPage() {
             <div className="flex-1">
               <h2 className="text-xl font-bold mb-3">We actually do the work</h2>
               <p className="text-gray-600">
-                With Operational Hub, we handle the operational load. Your books get closed, taxes get filed, contributors get paid—without you lifting a finger.
+                With Operational Hub, we handle the operational load. Your books get closed, taxes get filed, contributors get paid. All without you lifting a finger.
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function WhatsIncludedPage() {
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                 <h4 className="font-medium mb-2">Expense tracking</h4>
                 <p className="text-sm text-gray-600">
-                  Submit expenses, attach receipts, and we handle the rest—categorization, approval workflows, and reimbursement.
+                  Submit expenses, attach receipts, and we handle the rest: categorization, approval workflows, and reimbursement.
                 </p>
               </div>
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
@@ -114,7 +114,7 @@ export default function WhatsIncludedPage() {
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                 <h4 className="font-medium mb-2">Approval workflows</h4>
                 <p className="text-sm text-gray-600">
-                  You approve payments—we execute them. Clear separation between authorization and operations.
+                  You approve payments, we execute them. Clear separation between authorization and operations.
                 </p>
               </div>
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
@@ -139,7 +139,7 @@ export default function WhatsIncludedPage() {
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                 <h4 className="font-medium mb-2">Onboarding</h4>
                 <p className="text-sm text-gray-600">
-                  New contributors get set up properly—KYC, payment details, tax documentation collected and organized.
+                  New contributors get set up properly: KYC, payment details, tax documentation collected and organized.
                 </p>
               </div>
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
@@ -151,7 +151,7 @@ export default function WhatsIncludedPage() {
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                 <h4 className="font-medium mb-2">Offboarding</h4>
                 <p className="text-sm text-gray-600">
-                  When contributors leave, we handle the paperwork—final payments, agreement termination, clean records.
+                  When contributors leave, we handle the paperwork: final payments, agreement termination, clean records.
                 </p>
               </div>
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
@@ -188,7 +188,7 @@ export default function WhatsIncludedPage() {
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
                 <h4 className="font-medium mb-2">Document management</h4>
                 <p className="text-sm text-gray-600">
-                  Contracts, agreements, receipts, filings—organized and accessible when you need them.
+                  Contracts, agreements, receipts, filings: organized and accessible when you need them.
                 </p>
               </div>
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
@@ -304,7 +304,7 @@ export default function WhatsIncludedPage() {
               <div className="pb-8">
                 <h3 className="font-semibold mb-2">Onboarding</h3>
                 <p className="text-gray-600 text-sm mb-3">
-                  We onboard your contributors—collecting documentation, setting up payment details, and executing agreements. You're operational.
+                  We onboard your contributors by collecting documentation, setting up payment details, and executing agreements. You're operational.
                 </p>
               </div>
             </div>
