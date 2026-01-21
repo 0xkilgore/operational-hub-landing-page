@@ -375,36 +375,72 @@ export default function OperationalHubPage() {
       </Section>
 
       {/* Powered by Powerhouse Section */}
-      <Section id="powerhouse" className="border-b border-border">
+      <Section id="powerhouse" className="border-b border-border bg-gradient-to-b from-white to-gray-50/50">
         <ScrollReveal animation="scale">
           <div className="mx-auto max-w-5xl">
-            <div className="rounded-2xl border border-gray-200 bg-gradient-to-br from-gray-50 to-white p-8 md:p-12 shadow-sm hover:shadow-lg transition-shadow">
-              <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
-                <div className="flex justify-center md:justify-start">
-                  <Image
-                    src="/PH-Logo-Dark-L.png"
-                    alt="Powerhouse"
-                    width={400}
-                    height={120}
-                    className="h-24 md:h-32 w-auto"
-                  />
-                </div>
-                <div className="text-center md:text-left space-y-4">
-                  <p className="text-lg font-semibold text-[var(--achra)]">{poweredByPowerhouse.tagline}</p>
-                  <p className="text-base leading-relaxed text-muted-foreground">{poweredByPowerhouse.description}</p>
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    <Button variant="outline" asChild className="border-[var(--achra)] text-[var(--achra)] hover:bg-[var(--achra)] hover:text-white hover-lift">
-                      <a href={poweredByPowerhouse.cta.href} className="inline-flex items-center gap-2">
-                        {poweredByPowerhouse.cta.label}
-                        <ArrowRight className="h-4 w-4" />
-                      </a>
-                    </Button>
-                    <Button variant="outline" asChild className="border-gray-300 text-gray-700 hover:border-[var(--achra)] hover:text-[var(--achra)] hover-lift">
-                      <a href={poweredByPowerhouse.vetra.href} className="inline-flex items-center gap-2">
-                        {poweredByPowerhouse.vetra.label}
-                        <ArrowRight className="h-4 w-4" />
-                      </a>
-                    </Button>
+            {/* Decorative background elements */}
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-[var(--achra)]/5 via-transparent to-[var(--achra)]/5 rounded-3xl blur-xl" />
+              <div className="relative rounded-2xl border-2 border-gray-200 bg-white p-8 md:p-12 shadow-lg hover:shadow-xl hover:border-[var(--achra)]/20 transition-all overflow-hidden">
+                {/* Subtle pattern overlay */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-[var(--achra)]/5 to-transparent rounded-full -translate-y-1/2 translate-x-1/2" />
+                <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-gray-100 to-transparent rounded-full translate-y-1/2 -translate-x-1/2" />
+
+                <div className="relative grid gap-8 md:grid-cols-2 md:gap-12 items-center">
+                  {/* Logo side with visual treatment */}
+                  <div className="flex flex-col items-center md:items-start gap-6">
+                    <div className="inline-flex items-center gap-2 rounded-full bg-gray-100 px-3 py-1">
+                      <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                      <span className="text-xs font-medium text-gray-600">Infrastructure Partner</span>
+                    </div>
+                    <div className="p-6 rounded-xl bg-gradient-to-br from-gray-50 to-white border border-gray-100 shadow-sm">
+                      <Image
+                        src="/PH-Logo-Dark-L.png"
+                        alt="Powerhouse"
+                        width={400}
+                        height={120}
+                        className="h-20 md:h-24 w-auto"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Content side */}
+                  <div className="text-center md:text-left space-y-5">
+                    <div>
+                      <p className="text-xl font-bold text-gray-900 mb-2">{poweredByPowerhouse.tagline}</p>
+                      <p className="text-base leading-relaxed text-gray-600">{poweredByPowerhouse.description}</p>
+                    </div>
+
+                    {/* Stats or highlights */}
+                    <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+                      <div className="flex items-center gap-2 text-sm text-gray-600">
+                        <CheckCircle2 className="h-4 w-4 text-[var(--achra)]" />
+                        <span>Open Source</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-gray-600">
+                        <CheckCircle2 className="h-4 w-4 text-[var(--achra)]" />
+                        <span>Battle Tested</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-gray-600">
+                        <CheckCircle2 className="h-4 w-4 text-[var(--achra)]" />
+                        <span>DAO Native</span>
+                      </div>
+                    </div>
+
+                    <div className="flex flex-col sm:flex-row gap-3 pt-2">
+                      <Button asChild className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white hover-lift">
+                        <a href={poweredByPowerhouse.cta.href} className="inline-flex items-center gap-2">
+                          {poweredByPowerhouse.cta.label}
+                          <ArrowRight className="h-4 w-4" />
+                        </a>
+                      </Button>
+                      <Button variant="outline" asChild className="border-gray-300 text-gray-700 hover:border-[var(--achra)] hover:text-[var(--achra)] hover-lift">
+                        <a href={poweredByPowerhouse.vetra.href} className="inline-flex items-center gap-2">
+                          {poweredByPowerhouse.vetra.label}
+                          <ArrowRight className="h-4 w-4" />
+                        </a>
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
