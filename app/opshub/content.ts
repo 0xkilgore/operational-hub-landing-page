@@ -239,7 +239,7 @@ export const faq = {
     {
       question: "Do I still need legal counsel?",
       answer:
-        "Sometimes, but far less than a custom setup. The Hub is built on standardized templates and a proven agreement stack, which greatly reduces drafting and repeated reviews. You also get an introduction to MME, a top Swiss firm that helped draft the templates, for cases where you want counsel review or have edge cases.",
+        "Sometimes, but far less than a custom setup. The Hub is built on standardized templates and a proven agreement stack, which greatly reduces drafting and repeated reviews. We can also connect you with top Swiss firms for cases where you want counsel review or have edge cases.",
     },
     {
       question: "How do invoicing and payments work (fiat and stablecoins)?",
