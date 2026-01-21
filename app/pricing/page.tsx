@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Check, ArrowRight, Users, Building, Briefcase, Sparkles, Plus, FileText, CreditCard, UserPlus, Headphones } from "lucide-react"
+import { Check, ArrowRight, Users, Building, Briefcase, FileText, CreditCard, UserPlus, Headphones } from "lucide-react"
 import { SharedHeader } from "../_components/SharedHeader"
 import { SharedFooter } from "../_components/SharedFooter"
 
@@ -24,51 +24,8 @@ export default function PricingPage() {
       </section>
 
       {/* Pricing Cards */}
-      <section className="max-w-6xl mx-auto px-6 pb-20">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-          {/* Free */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col shadow-sm">
-            <div className="mb-6">
-              <div className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
-                <Sparkles className="w-5 h-5 text-gray-500" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2">Free</h3>
-              <p className="text-gray-500 text-sm">
-                Explore what's possible
-              </p>
-            </div>
-
-            <div className="mb-6">
-              <div className="flex items-baseline gap-1">
-                <span className="text-3xl font-bold">$0</span>
-              </div>
-              <p className="text-gray-400 text-sm mt-1">No commitment</p>
-            </div>
-
-            <ul className="space-y-3 mb-8 flex-grow">
-              <li className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Invoice management tools</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Legal document templates</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Platform access</span>
-              </li>
-            </ul>
-
-            <a
-              href="https://connect.powerhouse.xyz"
-              className="block w-full text-center border border-gray-300 hover:border-gray-400 py-3 rounded-xl font-medium transition-colors text-gray-700 hover:text-gray-900"
-            >
-              Get Started
-            </a>
-          </div>
-
+      <section className="max-w-5xl mx-auto px-6 pb-20">
+        <div className="grid md:grid-cols-3 gap-6">
           {/* Starter */}
           <div className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col shadow-sm">
             <div className="mb-6">
@@ -234,7 +191,7 @@ export default function PricingPage() {
 
         {/* Self-service note */}
         <p className="text-center text-gray-500 text-sm mt-8">
-          Prefer to explore on your own? <a href="https://connect.powerhouse.xyz" className="text-[rgb(122,58,255)] hover:underline">Try the platform free</a> or <a href="/included" className="text-[rgb(122,58,255)] hover:underline">see what's included</a>.
+          Want to learn more? <a href="/included" className="text-[rgb(122,58,255)] hover:underline">See what's included</a> or <a href="/contact" className="text-[rgb(122,58,255)] hover:underline">schedule a call</a> to discuss your needs.
         </p>
       </section>
 
@@ -251,7 +208,6 @@ export default function PricingPage() {
               <thead>
                 <tr className="border-b border-gray-200">
                   <th className="text-left py-4 px-4 font-semibold text-gray-900">Feature</th>
-                  <th className="text-center py-4 px-4 font-semibold text-gray-500">Free</th>
                   <th className="text-center py-4 px-4 font-semibold text-gray-900">Starter</th>
                   <th className="text-center py-4 px-4 font-semibold text-[rgb(122,58,255)]">Standard</th>
                   <th className="text-center py-4 px-4 font-semibold text-gray-900">Custom</th>
@@ -260,14 +216,12 @@ export default function PricingPage() {
               <tbody className="divide-y divide-gray-200">
                 <tr>
                   <td className="py-3 px-4 text-gray-700">Swiss association entity</td>
-                  <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr className="bg-white">
                   <td className="py-3 px-4 text-gray-700">Registered address (Zug)</td>
-                  <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
@@ -277,18 +231,15 @@ export default function PricingPage() {
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
-                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr className="bg-white">
                   <td className="py-3 px-4 text-gray-700">Legal document templates</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
-                  <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr>
                   <td className="py-3 px-4 text-gray-700">Annual tax filing</td>
-                  <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
@@ -296,13 +247,11 @@ export default function PricingPage() {
                 <tr className="bg-white">
                   <td className="py-3 px-4 text-gray-700">Monthly accounting & close</td>
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
-                  <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr>
                   <td className="py-3 px-4 text-gray-700">Contributor operations</td>
-                  <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
@@ -310,13 +259,11 @@ export default function PricingPage() {
                 <tr className="bg-white">
                   <td className="py-3 px-4 text-gray-700">Multi-currency payouts</td>
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
-                  <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr>
                   <td className="py-3 px-4 text-gray-700">Dedicated ops support</td>
-                  <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
@@ -325,12 +272,10 @@ export default function PricingPage() {
                   <td className="py-3 px-4 text-gray-700">Multiple entities</td>
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
-                  <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr>
                   <td className="py-3 px-4 text-gray-700">Dedicated account manager</td>
-                  <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
@@ -531,7 +476,7 @@ export default function PricingPage() {
         <div className="max-w-3xl mx-auto px-6 py-20 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to stop doing ops as a side job?</h2>
           <p className="text-gray-600 mb-8">
-            Not sure which plan fits? Let's figure it out together—or explore the platform on your own.
+            Not sure which plan fits? Let's figure it out together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -542,10 +487,10 @@ export default function PricingPage() {
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
-              href="https://connect.powerhouse.xyz"
+              href="/included"
               className="border border-gray-300 hover:border-gray-400 px-8 py-3 rounded-xl font-medium transition-colors text-gray-700"
             >
-              Try Free
+              See What's Included
             </a>
           </div>
         </div>
