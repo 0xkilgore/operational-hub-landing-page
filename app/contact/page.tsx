@@ -6,6 +6,9 @@ import Cal, { getCalApi } from "@calcom/embed-react"
 import { SharedHeader } from "../_components/SharedHeader"
 import { SharedFooter } from "../_components/SharedFooter"
 
+// Note: metadata is in layout.tsx or needs a separate server component wrapper
+// For now, the root layout metadata applies
+
 export default function ContactPage() {
   useEffect(() => {
     (async function () {

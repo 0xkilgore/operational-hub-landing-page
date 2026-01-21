@@ -4,6 +4,7 @@ import { notFound } from "next/navigation"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import { getAllSlugs, getPostBySlug } from "@/lib/blog"
 import { Calendar, User, Clock, ArrowLeft } from "lucide-react"
+import { SharedFooter } from "@/app/_components/SharedFooter"
 
 interface PageProps {
   params: Promise<{ slug: string }>
@@ -82,12 +83,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         </div>
       </article>
 
-      {/* Footer */}
-      <footer className="border-t border-gray-200 bg-gray-50 py-8">
-        <div className="container mx-auto max-w-3xl px-4 text-center text-sm text-gray-500 md:px-6">
-          <p>&copy; 2026 Achra. Informational only. Not legal, financial, or tax advice.</p>
-        </div>
-      </footer>
+      <SharedFooter />
     </div>
   )
 }

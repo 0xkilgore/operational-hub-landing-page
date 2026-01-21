@@ -1,6 +1,12 @@
+import type { Metadata } from "next"
 import { ArrowRight, Calculator, FileText, CreditCard, Users, BarChart3, Shield, Clock, CheckCircle2 } from "lucide-react"
 import { SharedHeader } from "../_components/SharedHeader"
 import { SharedFooter } from "../_components/SharedFooter"
+
+export const metadata: Metadata = {
+  title: "What's Included | Operational Hub",
+  description: "Full-service back office operations: accounting, payroll, compliance, invoicing, and admin handled by an operator team so you can focus on building.",
+}
 
 export default function WhatsIncludedPage() {
   return (

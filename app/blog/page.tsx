@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/blog"
 import { ArrowRight, Calendar, User, Clock } from "lucide-react"
+import { SharedFooter } from "@/app/_components/SharedFooter"
 
 export const metadata: Metadata = {
   title: "Blog | Operational Hub",
@@ -77,12 +78,7 @@ export default function BlogPage() {
         )}
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-gray-200 bg-gray-50 py-8">
-        <div className="container mx-auto max-w-4xl px-4 text-center text-sm text-gray-500 md:px-6">
-          <p>&copy; 2026 Achra. Informational only. Not legal, financial, or tax advice.</p>
-        </div>
-      </footer>
+      <SharedFooter />
     </div>
   )
 }

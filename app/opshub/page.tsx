@@ -15,8 +15,13 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Operational Hub",
-  description: "A back office system for global teams, with clean records for reporting and tax filings.",
+  title: "Operational Hub | Less Admin. More Building.",
+  description: "A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting handled by an operator team, plus a Swiss legal entity for contracts and member privacy.",
+  openGraph: {
+    title: "Operational Hub | Less Admin. More Building.",
+    description: "A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting handled by an operator team, plus a Swiss legal entity for contracts and member privacy.",
+    type: "website",
+  },
 }
 
 // Icons for audience cards

@@ -1,6 +1,12 @@
+import type { Metadata } from "next"
 import { Check, ArrowRight, Users, Building, Briefcase, Sparkles, Plus, FileText, CreditCard, UserPlus, Headphones } from "lucide-react"
 import { SharedHeader } from "../_components/SharedHeader"
 import { SharedFooter } from "../_components/SharedFooter"
+
+export const metadata: Metadata = {
+  title: "Pricing | Operational Hub",
+  description: "Transparent pricing for your back office operations. Entity setup, accounting, payroll, and compliance with no hidden fees. Plans starting at $500/seat/month.",
+}
 
 export default function PricingPage() {
   return (
