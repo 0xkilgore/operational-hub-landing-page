@@ -15,13 +15,13 @@ export default function WhatsIncludedPage() {
 
       {/* Hero */}
       <section className="max-w-4xl mx-auto px-6 py-20 text-center">
-        <div className="inline-flex items-center gap-2 bg-gray-100 border border-gray-200 rounded-full px-4 py-1.5 mb-6">
+        <div className="inline-flex items-center gap-2 bg-gray-100 border border-gray-200 rounded-full px-4 py-1.5 mb-6 animate-fade-in-up">
           <span className="text-xs text-gray-600">Full-Service Operations</span>
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up" style={{ animationDelay: "100ms" }}>
           Your back office,<br />handled.
         </h1>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "200ms" }}>
           We don't just give you tools. We do the work. Accounting, payroll, compliance, and admin, all taken care of so you can focus on building.
         </p>
       </section>
@@ -30,14 +30,14 @@ export default function WhatsIncludedPage() {
       <section className="border-t border-gray-200 bg-[rgb(122,58,255)]/5">
         <div className="max-w-4xl mx-auto px-6 py-12">
           <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="flex-1">
+            <div className="flex-1 animate-fade-in-up" style={{ animationDelay: "300ms" }}>
               <h2 className="text-xl font-bold mb-3">This isn't another SaaS tool</h2>
               <p className="text-gray-600">
                 Most "operations platforms" hand you software and wish you luck. You still need to do your own accounting, figure out tax filing, and manage compliance yourself.
               </p>
             </div>
             <div className="w-px h-16 bg-gray-300 hidden md:block" />
-            <div className="flex-1">
+            <div className="flex-1 animate-fade-in-up" style={{ animationDelay: "400ms" }}>
               <h2 className="text-xl font-bold mb-3">We actually do the work</h2>
               <p className="text-gray-600">
                 With Operational Hub, we handle the operational load. Your books get closed, taxes get filed, contributors get paid. All without you lifting a finger.
@@ -62,25 +62,25 @@ export default function WhatsIncludedPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
                 <h4 className="font-medium mb-2">Monthly bookkeeping</h4>
                 <p className="text-sm text-gray-600">
                   We categorize transactions, reconcile accounts, and keep your books accurate and up-to-date every month.
                 </p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
                 <h4 className="font-medium mb-2">Expense tracking</h4>
                 <p className="text-sm text-gray-600">
                   Submit expenses, attach receipts, and we handle the rest: categorization, approval workflows, and reimbursement.
                 </p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
                 <h4 className="font-medium mb-2">Financial reporting</h4>
                 <p className="text-sm text-gray-600">
                   Access real-time dashboards and reports. Know exactly where your money is going without digging through spreadsheets.
                 </p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
                 <h4 className="font-medium mb-2">Tax filing</h4>
                 <p className="text-sm text-gray-600">
                   We prepare and file your Swiss tax returns annually. No scrambling at year-end, no surprises.
@@ -99,25 +99,25 @@ export default function WhatsIncludedPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
                 <h4 className="font-medium mb-2">Invoice processing</h4>
                 <p className="text-sm text-gray-600">
                   Contributors submit invoices, we verify and process them through approval workflows, ready for payout.
                 </p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
                 <h4 className="font-medium mb-2">Multi-currency payouts</h4>
                 <p className="text-sm text-gray-600">
                   Pay contributors in fiat (USD, EUR, CHF, GBP) or stablecoins (USDC, DAI). We handle the conversions.
                 </p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
                 <h4 className="font-medium mb-2">Approval workflows</h4>
                 <p className="text-sm text-gray-600">
                   You approve payments, we execute them. Clear separation between authorization and operations.
                 </p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
                 <h4 className="font-medium mb-2">Vendor payments</h4>
                 <p className="text-sm text-gray-600">
                   Pay service providers, tools, and vendors. We manage recurring payments and keep everything documented.
@@ -136,25 +136,25 @@ export default function WhatsIncludedPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
                 <h4 className="font-medium mb-2">Onboarding</h4>
                 <p className="text-sm text-gray-600">
                   New contributors get set up properly: KYC, payment details, tax documentation collected and organized.
                 </p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
                 <h4 className="font-medium mb-2">Contributor agreements</h4>
                 <p className="text-sm text-gray-600">
                   We provide battle-tested agreement templates, customized for your team and reviewed by legal counsel.
                 </p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
                 <h4 className="font-medium mb-2">Offboarding</h4>
                 <p className="text-sm text-gray-600">
                   When contributors leave, we handle the paperwork: final payments, agreement termination, clean records.
                 </p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
                 <h4 className="font-medium mb-2">Contractor management</h4>
                 <p className="text-sm text-gray-600">
                   Track active contributors, contract terms, payment history, and documentation in one place.
@@ -173,25 +173,25 @@ export default function WhatsIncludedPage() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
                 <h4 className="font-medium mb-2">Registered address</h4>
                 <p className="text-sm text-gray-600">
                   Official Swiss address for your entity. Mail handling and forwarding included.
                 </p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
                 <h4 className="font-medium mb-2">Regulatory filings</h4>
                 <p className="text-sm text-gray-600">
                   We track deadlines and handle required filings so you never miss a compliance date.
                 </p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
                 <h4 className="font-medium mb-2">Document management</h4>
                 <p className="text-sm text-gray-600">
                   Contracts, agreements, receipts, filings: organized and accessible when you need them.
                 </p>
               </div>
-              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5">
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
                 <h4 className="font-medium mb-2">Legal partner access</h4>
                 <p className="text-sm text-gray-600">
                   Need legal advice? We connect you with vetted Swiss legal counsel who understand your structure.

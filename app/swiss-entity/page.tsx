@@ -15,13 +15,13 @@ export default function SwissEntityPage() {
 
       {/* Hero */}
       <section className="max-w-4xl mx-auto px-6 py-20 text-center">
-        <div className="inline-flex items-center gap-2 bg-gray-100 border border-gray-200 rounded-full px-4 py-1.5 mb-6">
+        <div className="inline-flex items-center gap-2 bg-gray-100 border border-gray-200 rounded-full px-4 py-1.5 mb-6 animate-fade-in-up">
           <span className="text-xs text-gray-500">Entity Structure</span>
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up" style={{ animationDelay: "100ms" }}>
           Your entity.<br />Swiss precision.
         </h1>
-        <p className="text-xl text-gray-500 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-500 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "200ms" }}>
           A Swiss association gives your team a real legal home with privacy, flexibility, and a framework built for international builder teams.
         </p>
       </section>
@@ -45,7 +45,7 @@ export default function SwissEntityPage() {
           <h2 className="text-2xl font-bold mb-10 text-center">Why Switzerland?</h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
+            <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-gray-300 transition-all">
               <div className="w-10 h-10 bg-[rgba(122,58,255,0.1)] rounded-lg flex items-center justify-center mb-4">
                 <Lock className="w-5 h-5 text-[rgb(122,58,255)]" />
               </div>
@@ -55,7 +55,7 @@ export default function SwissEntityPage() {
               </p>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
+            <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-gray-300 transition-all">
               <div className="w-10 h-10 bg-[rgba(122,58,255,0.1)] rounded-lg flex items-center justify-center mb-4">
                 <Scale className="w-5 h-5 text-[rgb(122,58,255)]" />
               </div>
@@ -65,7 +65,7 @@ export default function SwissEntityPage() {
               </p>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
+            <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-gray-300 transition-all">
               <div className="w-10 h-10 bg-[rgba(122,58,255,0.1)] rounded-lg flex items-center justify-center mb-4">
                 <Shield className="w-5 h-5 text-[rgb(122,58,255)]" />
               </div>
@@ -75,7 +75,7 @@ export default function SwissEntityPage() {
               </p>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
+            <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-gray-300 transition-all">
               <div className="w-10 h-10 bg-[rgba(122,58,255,0.1)] rounded-lg flex items-center justify-center mb-4">
                 <Globe className="w-5 h-5 text-[rgb(122,58,255)]" />
               </div>
@@ -85,7 +85,7 @@ export default function SwissEntityPage() {
               </p>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
+            <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-gray-300 transition-all">
               <div className="w-10 h-10 bg-[rgba(122,58,255,0.1)] rounded-lg flex items-center justify-center mb-4">
                 <Building2 className="w-5 h-5 text-[rgb(122,58,255)]" />
               </div>
@@ -95,7 +95,7 @@ export default function SwissEntityPage() {
               </p>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
+            <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-gray-300 transition-all">
               <div className="w-10 h-10 bg-[rgba(122,58,255,0.1)] rounded-lg flex items-center justify-center mb-4">
                 <Users className="w-5 h-5 text-[rgb(122,58,255)]" />
               </div>
@@ -114,7 +114,7 @@ export default function SwissEntityPage() {
           <h2 className="text-2xl font-bold mb-10 text-center">What a Swiss Association can and can't do</h2>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
+            <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-gray-300 transition-all">
               <h3 className="font-semibold mb-4 text-[rgb(122,58,255)] flex items-center gap-2">
                 <Check className="w-5 h-5" />
                 Well suited for
@@ -151,7 +151,7 @@ export default function SwissEntityPage() {
               </ul>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
+            <div className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg hover:border-gray-300 transition-all">
               <h3 className="font-semibold mb-4 text-gray-500 flex items-center gap-2">
                 <X className="w-5 h-5" />
                 Not designed for

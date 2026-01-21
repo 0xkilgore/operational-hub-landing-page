@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 
 interface SharedHeaderProps {
-  currentPage?: "included" | "swiss-entity" | "pricing" | "contact"
+  currentPage?: "included" | "swiss-entity" | "pricing" | "contact" | "blog"
 }
 
 export function SharedHeader({ currentPage }: SharedHeaderProps) {
@@ -16,6 +16,7 @@ export function SharedHeader({ currentPage }: SharedHeaderProps) {
     { label: "What's Included", href: "/included", key: "included" },
     { label: "Swiss Entity", href: "/swiss-entity", key: "swiss-entity" },
     { label: "Pricing", href: "/pricing", key: "pricing" },
+    { label: "Blog", href: "/blog", key: "blog" },
   ]
 
   return (

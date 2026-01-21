@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/blog"
 import { ArrowRight, Calendar, User, Clock } from "lucide-react"
+import { SharedHeader } from "@/app/_components/SharedHeader"
 import { SharedFooter } from "@/app/_components/SharedFooter"
 
 export const metadata: Metadata = {
@@ -13,21 +14,14 @@ export default function BlogPage() {
   const posts = getAllPosts()
 
   return (
-    <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b border-gray-200 bg-white">
-        <div className="container mx-auto max-w-4xl px-4 py-6 md:px-6">
-          <Link href="/opshub" className="text-sm text-[var(--achra)] hover:text-[var(--achra-hover)]">
-            &larr; Back to Operational Hub
-          </Link>
-        </div>
-      </header>
+    <div className="min-h-screen bg-white text-gray-900">
+      <SharedHeader currentPage="blog" />
 
       {/* Hero */}
       <section className="border-b border-gray-100 bg-gray-50/50">
         <div className="container mx-auto max-w-4xl px-4 py-12 md:px-6 md:py-16">
-          <h1 className="text-4xl font-bold tracking-tight md:text-5xl">Blog</h1>
-          <p className="mt-4 text-lg text-muted-foreground">
+          <h1 className="text-4xl font-bold tracking-tight md:text-5xl animate-fade-in-up">Blog</h1>
+          <p className="mt-4 text-lg text-muted-foreground animate-fade-in-up" style={{ animationDelay: "100ms" }}>
             Updates, insights, and resources for global teams.
           </p>
         </div>

@@ -15,10 +15,10 @@ export default function PricingPage() {
 
       {/* Hero */}
       <section className="max-w-4xl mx-auto px-6 py-20 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up">
           Transparent pricing.<br />No surprises.
         </h1>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "100ms" }}>
           Your entity, your control. We handle the legal setup, accounting, payroll, and compliance so you can focus on building.
         </p>
       </section>
@@ -27,7 +27,7 @@ export default function PricingPage() {
       <section className="max-w-5xl mx-auto px-6 pb-20">
         <div className="grid md:grid-cols-3 gap-6">
           {/* Starter */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col shadow-sm">
+          <div className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col shadow-sm hover:shadow-lg hover:border-gray-300 transition-all animate-fade-in-up" style={{ animationDelay: "200ms" }}>
             <div className="mb-6">
               <div className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
                 <Building className="w-5 h-5 text-gray-500" />
@@ -79,7 +79,7 @@ export default function PricingPage() {
           </div>
 
           {/* Standard - Featured */}
-          <div className="bg-white border-2 border-[rgb(122,58,255)] rounded-2xl p-6 flex flex-col relative shadow-md">
+          <div className="bg-white border-2 border-[rgb(122,58,255)] rounded-2xl p-6 flex flex-col relative shadow-md hover:shadow-xl transition-all animate-fade-in-up" style={{ animationDelay: "300ms" }}>
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[rgb(122,58,255)] text-white text-xs font-semibold px-3 py-1 rounded-full">
               Most Popular
             </div>
@@ -139,7 +139,7 @@ export default function PricingPage() {
           </div>
 
           {/* Custom */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col shadow-sm">
+          <div className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col shadow-sm hover:shadow-lg hover:border-gray-300 transition-all animate-fade-in-up" style={{ animationDelay: "400ms" }}>
             <div className="mb-6">
               <div className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
                 <Briefcase className="w-5 h-5 text-gray-500" />
