@@ -44,7 +44,7 @@ export default function PricingPage() {
                 <span className="text-gray-500">/month</span>
               </div>
               <p className="text-gray-500 text-sm mt-1">+ per-invoice fee</p>
-              <p className="text-gray-400 text-sm mt-1">+ one-time setup</p>
+              <p className="text-gray-400 text-xs mt-1">$3,000 one-time setup</p>
             </div>
 
             <ul className="space-y-3 mb-8 flex-grow">
@@ -100,7 +100,7 @@ export default function PricingPage() {
                 <span className="text-gray-500">/month</span>
               </div>
               <p className="text-[rgb(122,58,255)] text-sm mt-1 font-medium">+ $500 per seat</p>
-              <p className="text-gray-400 text-sm mt-1">+ one-time setup</p>
+              <p className="text-gray-400 text-xs mt-1">$3,000 one-time setup</p>
             </div>
 
             <ul className="space-y-3 mb-8 flex-grow">
