@@ -391,7 +391,7 @@ export default function OperationalHubPage() {
                   <div className="flex flex-col items-center md:items-start gap-6">
                     <div className="inline-flex items-center gap-2 rounded-full bg-gray-100 px-3 py-1">
                       <div className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                      <span className="text-xs font-medium text-gray-600">Infrastructure Partner</span>
+                      <span className="text-xs font-medium text-gray-600">Built on Powerhouse</span>
                     </div>
                     <div className="p-6 rounded-xl bg-gradient-to-br from-gray-50 to-white border border-gray-100 shadow-sm">
                       <Image
