@@ -1,4 +1,5 @@
-import type { Metadata } from "next"
+"use client"
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Navigation } from "./_components/Navigation"
@@ -6,6 +7,7 @@ import { Hero } from "./_components/Hero"
 import { Section } from "./_components/Section"
 import { FAQ } from "./_components/FAQ"
 import { EntitySection } from "./_components/EntitySection"
+import { ScrollReveal } from "./_components/ScrollReveal"
 import { SharedFooter } from "@/app/_components/SharedFooter"
 import { problem, audience, benefits, whatYouGet, howItWorks, ownership, footerCta, achraPlatform, poweredByPowerhouse } from "./content"
 import Image from "next/image"
@@ -14,16 +16,6 @@ import {
   Clock, Code, Lock, CheckCircle2, Sparkles,
   Building2, Globe, Briefcase, Settings, KeyRound, Eye
 } from "lucide-react"
-
-export const metadata: Metadata = {
-  title: "Operational Hub | Less Admin. More Building.",
-  description: "A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting handled by an operator team, plus a Swiss legal entity for contracts and member privacy.",
-  openGraph: {
-    title: "Operational Hub | Less Admin. More Building.",
-    description: "A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting handled by an operator team, plus a Swiss legal entity for contracts and member privacy.",
-    type: "website",
-  },
-}
 
 // Icons for audience cards
 const audienceIcons = [Code, Globe, Lock]
@@ -39,65 +31,72 @@ export default function OperationalHubPage() {
 
       {/* Problem Section */}
       <Section id="problem" className="border-b border-border">
-        <div className="mx-auto max-w-3xl space-y-6 text-center">
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 border border-amber-200">
-            <Clock className="h-8 w-8 text-amber-600" />
+        <ScrollReveal>
+          <div className="mx-auto max-w-3xl space-y-6 text-center">
+            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 border border-amber-200 animate-float">
+              <Clock className="h-8 w-8 text-amber-600" />
+            </div>
+            <h2 className="text-balance text-3xl font-bold tracking-tight md:text-4xl">{problem.title}</h2>
+            <p className="text-pretty text-lg leading-relaxed text-muted-foreground">{problem.body}</p>
           </div>
-          <h2 className="text-balance text-3xl font-bold tracking-tight md:text-4xl">{problem.title}</h2>
-          <p className="text-pretty text-lg leading-relaxed text-muted-foreground">{problem.body}</p>
-        </div>
+        </ScrollReveal>
       </Section>
 
       {/* Who This Is For Section */}
       <Section id="who" className="border-b border-border bg-gray-50/50 py-16 md:py-20">
         <div className="space-y-10">
-          <div className="space-y-3 text-center">
-            <span className="inline-flex items-center rounded-full bg-[var(--achra)]/10 px-3 py-1 text-xs font-medium text-[var(--achra)]">
-              Built for you
-            </span>
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">{audience.title}</h2>
-            <p className="text-base text-muted-foreground max-w-3xl mx-auto">{audience.subtitle}</p>
-          </div>
+          <ScrollReveal>
+            <div className="space-y-3 text-center">
+              <span className="inline-flex items-center rounded-full bg-[var(--achra)]/10 px-3 py-1 text-xs font-medium text-[var(--achra)]">
+                Built for you
+              </span>
+              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">{audience.title}</h2>
+              <p className="text-base text-muted-foreground max-w-3xl mx-auto">{audience.subtitle}</p>
+            </div>
+          </ScrollReveal>
           <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-3">
             {audience.items.map((item, index) => {
               const Icon = audienceIcons[index]
               return (
-                <div
-                  key={index}
-                  className="group flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-lg hover:border-[var(--achra)]/30"
-                >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--achra)]/10 to-[var(--achra)]/5 border border-[var(--achra)]/20 group-hover:from-[var(--achra)]/20 group-hover:to-[var(--achra)]/10 transition-colors">
-                    <Icon className="h-6 w-6 text-[var(--achra)]" />
+                <ScrollReveal key={index} delay={index * 100}>
+                  <div className="group flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-lg hover:border-[var(--achra)]/30 hover-lift h-full">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--achra)]/10 to-[var(--achra)]/5 border border-[var(--achra)]/20 group-hover:from-[var(--achra)]/20 group-hover:to-[var(--achra)]/10 transition-colors">
+                      <Icon className="h-6 w-6 text-[var(--achra)]" />
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="font-bold text-lg text-gray-900">{item.label}</h3>
+                      <p className="text-sm leading-relaxed text-gray-600">{item.description}</p>
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <h3 className="font-bold text-lg text-gray-900">{item.label}</h3>
-                    <p className="text-sm leading-relaxed text-gray-600">{item.description}</p>
-                  </div>
-                </div>
+                </ScrollReveal>
               )
             })}
           </div>
           {/* CTAs */}
-          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center pt-4">
-            <Button size="lg" asChild className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white">
-              <Link href="/pricing">See Pricing</Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild className="border-gray-300 hover:border-[var(--achra)] hover:text-[var(--achra)]">
-              <Link href="/contact">Book a Call</Link>
-            </Button>
-          </div>
+          <ScrollReveal delay={300}>
+            <div className="flex flex-col gap-3 sm:flex-row sm:justify-center pt-4">
+              <Button size="lg" asChild className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white hover-lift">
+                <Link href="/pricing">See Pricing</Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild className="border-gray-300 hover:border-[var(--achra)] hover:text-[var(--achra)] hover-lift">
+                <Link href="/contact">Book a Call</Link>
+              </Button>
+            </div>
+          </ScrollReveal>
         </div>
       </Section>
 
       {/* Benefits Section */}
       <Section id="why" className="border-b border-border">
         <div className="space-y-12">
-          <div className="text-center space-y-3">
-            <span className="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700">
-              Why teams choose us
-            </span>
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">{benefits.title}</h2>
-          </div>
+          <ScrollReveal>
+            <div className="text-center space-y-3">
+              <span className="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700">
+                Why teams choose us
+              </span>
+              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">{benefits.title}</h2>
+            </div>
+          </ScrollReveal>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {benefits.items.map((item, index) => {
               const Icon = benefitIcons[index]
@@ -111,18 +110,17 @@ export default function OperationalHubPage() {
               ]
               const colorClass = colors[index % colors.length]
               return (
-                <div
-                  key={index}
-                  className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-lg"
-                >
-                  <div className={`flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br border ${colorClass} mb-4`}>
-                    <Icon className="h-5 w-5" />
+                <ScrollReveal key={index} delay={index * 80}>
+                  <div className="group relative overflow-hidden rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-lg hover-lift hover-glow h-full">
+                    <div className={`flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br border ${colorClass} mb-4 transition-transform group-hover:scale-110`}>
+                      <Icon className="h-5 w-5" />
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="text-lg font-semibold leading-tight text-gray-900">{item.title}</h3>
+                      <p className="text-sm leading-relaxed text-gray-600">{item.description}</p>
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <h3 className="text-lg font-semibold leading-tight text-gray-900">{item.title}</h3>
-                    <p className="text-sm leading-relaxed text-gray-600">{item.description}</p>
-                  </div>
-                </div>
+                </ScrollReveal>
               )
             })}
           </div>
@@ -132,65 +130,71 @@ export default function OperationalHubPage() {
       {/* What You Get Section */}
       <Section id="what-you-get" className="border-b border-border bg-gray-50/50">
         <div className="space-y-12">
-          <div className="mx-auto max-w-3xl space-y-3 text-center">
-            <span className="inline-flex items-center rounded-full bg-[var(--achra)]/10 px-3 py-1 text-xs font-medium text-[var(--achra)]">
-              Complete package
-            </span>
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">{whatYouGet.title}</h2>
-            <p className="text-base leading-relaxed text-muted-foreground">{whatYouGet.subtitle}</p>
-          </div>
+          <ScrollReveal>
+            <div className="mx-auto max-w-3xl space-y-3 text-center">
+              <span className="inline-flex items-center rounded-full bg-[var(--achra)]/10 px-3 py-1 text-xs font-medium text-[var(--achra)]">
+                Complete package
+              </span>
+              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">{whatYouGet.title}</h2>
+              <p className="text-base leading-relaxed text-muted-foreground">{whatYouGet.subtitle}</p>
+            </div>
+          </ScrollReveal>
           <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2 lg:grid-cols-3">
             {whatYouGet.items.map((item, index) => {
               const icons = [Users, Workflow, Zap, FileText, Shield]
               const Icon = icons[index % icons.length]
               return (
-                <div
-                  key={item.id}
-                  className="group flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-lg hover:border-[var(--achra)]/30"
-                >
-                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--achra)] to-[var(--achra-hover)] shadow-lg shadow-[var(--achra)]/20">
-                    <Icon className="h-7 w-7 text-white" />
+                <ScrollReveal key={item.id} delay={index * 100}>
+                  <div className="group flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:shadow-lg hover:border-[var(--achra)]/30 hover-lift h-full">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--achra)] to-[var(--achra-hover)] shadow-lg shadow-[var(--achra)]/20 transition-transform group-hover:scale-110 group-hover:rotate-3">
+                      <Icon className="h-7 w-7 text-white" />
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="font-bold text-lg text-gray-900">{item.label}</h3>
+                      <p className="text-sm leading-relaxed text-gray-600">{item.description}</p>
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <h3 className="font-bold text-lg text-gray-900">{item.label}</h3>
-                    <p className="text-sm leading-relaxed text-gray-600">{item.description}</p>
-                  </div>
-                </div>
+                </ScrollReveal>
               )
             })}
           </div>
           {/* CTA */}
-          <div className="pt-4 text-center">
-            <Button size="lg" asChild className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white">
-              <Link href="/included" className="inline-flex items-center gap-2">
-                Explore the capabilities of an Operational Hub
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
+          <ScrollReveal delay={400}>
+            <div className="pt-4 text-center">
+              <Button size="lg" asChild className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white hover-lift">
+                <Link href="/included" className="inline-flex items-center gap-2">
+                  Explore the capabilities of an Operational Hub
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </Button>
+            </div>
+          </ScrollReveal>
         </div>
       </Section>
 
       {/* Entity Section */}
       <Section id="entity" className="border-b border-border">
-        <EntitySection />
+        <ScrollReveal>
+          <EntitySection />
+        </ScrollReveal>
       </Section>
 
       {/* How It Works Section */}
       <Section id="how-it-works" className="border-b border-border bg-gray-50/50">
         <div className="space-y-12">
-          <div className="mx-auto max-w-3xl space-y-3 text-center">
-            <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700">
-              Simple process
-            </span>
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">{howItWorks.title}</h2>
-            <p className="text-pretty text-base leading-relaxed text-muted-foreground">{howItWorks.subtitle}</p>
-          </div>
+          <ScrollReveal>
+            <div className="mx-auto max-w-3xl space-y-3 text-center">
+              <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700">
+                Simple process
+              </span>
+              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">{howItWorks.title}</h2>
+              <p className="text-pretty text-base leading-relaxed text-muted-foreground">{howItWorks.subtitle}</p>
+            </div>
+          </ScrollReveal>
 
           {/* Steps */}
           <div className="mx-auto max-w-3xl">
             <div className="relative space-y-6">
-
               {howItWorks.steps.map((step, index) => {
                 const stepColors = [
                   "bg-[var(--achra)] text-white shadow-[var(--achra)]/30",
@@ -198,120 +202,134 @@ export default function OperationalHubPage() {
                   "bg-emerald-500 text-white shadow-emerald-500/30",
                 ]
                 return (
-                  <div key={step.number} className="relative flex gap-6">
-                    <div className={`relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl shadow-lg md:h-18 md:w-18 ${stepColors[index]}`}>
-                      <span className="text-xl font-bold md:text-2xl">{step.number}</span>
+                  <ScrollReveal key={step.number} delay={index * 150} animation="slide-left">
+                    <div className="relative flex gap-6">
+                      <div className={`relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl shadow-lg md:h-18 md:w-18 ${stepColors[index]} transition-transform hover:scale-110`}>
+                        <span className="text-xl font-bold md:text-2xl">{step.number}</span>
+                      </div>
+                      <div className="flex flex-1 flex-col justify-center rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg hover:border-[var(--achra)]/30 transition-all">
+                        <h3 className="text-lg font-semibold md:text-xl text-gray-900">{step.title}</h3>
+                        <p className="mt-2 text-sm text-gray-600 md:text-base">{step.description}</p>
+                        {"counselNote" in step && step.counselNote && (
+                          <p className="mt-3 text-xs italic text-gray-500 border-l-2 border-gray-200 pl-3">{step.counselNote}</p>
+                        )}
+                        {"operatorSupportDetails" in step && step.operatorSupportDetails && (
+                          <details className="mt-4 group">
+                            <summary className="cursor-pointer list-none text-sm font-medium text-[var(--achra)] hover:text-[var(--achra-hover)] flex items-center gap-2">
+                              <Sparkles className="h-4 w-4" />
+                              What's included in operator support
+                            </summary>
+                            <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                              {step.operatorSupportDetails.map((item, idx) => (
+                                <div key={idx} className="rounded-lg bg-gray-50 p-3 border border-gray-100">
+                                  <h4 className="text-sm font-semibold text-gray-900">{item.heading}</h4>
+                                  <p className="text-xs text-gray-600 mt-1 leading-relaxed">{item.description}</p>
+                                </div>
+                              ))}
+                            </div>
+                          </details>
+                        )}
+                      </div>
                     </div>
-                    <div className="flex flex-1 flex-col justify-center rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-                      <h3 className="text-lg font-semibold md:text-xl text-gray-900">{step.title}</h3>
-                      <p className="mt-2 text-sm text-gray-600 md:text-base">{step.description}</p>
-                      {"counselNote" in step && step.counselNote && (
-                        <p className="mt-3 text-xs italic text-gray-500 border-l-2 border-gray-200 pl-3">{step.counselNote}</p>
-                      )}
-                      {"operatorSupportDetails" in step && step.operatorSupportDetails && (
-                        <details className="mt-4 group">
-                          <summary className="cursor-pointer list-none text-sm font-medium text-[var(--achra)] hover:text-[var(--achra-hover)] flex items-center gap-2">
-                            <Sparkles className="h-4 w-4" />
-                            What's included in operator support
-                          </summary>
-                          <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                            {step.operatorSupportDetails.map((item, idx) => (
-                              <div key={idx} className="rounded-lg bg-gray-50 p-3 border border-gray-100">
-                                <h4 className="text-sm font-semibold text-gray-900">{item.heading}</h4>
-                                <p className="text-xs text-gray-600 mt-1 leading-relaxed">{item.description}</p>
-                              </div>
-                            ))}
-                          </div>
-                        </details>
-                      )}
-                    </div>
-                  </div>
+                  </ScrollReveal>
                 )
               })}
             </div>
           </div>
 
           {/* CTA */}
-          <div className="pt-4 text-center">
-            <Button
-              asChild
-              variant="outline"
-              className="border-[var(--achra)] text-[var(--achra)] hover:bg-[var(--achra)] hover:text-white"
-            >
-              <Link href="/included" className="inline-flex items-center gap-2">
-                See what's included
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
+          <ScrollReveal delay={450}>
+            <div className="pt-4 text-center">
+              <Button
+                asChild
+                variant="outline"
+                className="border-[var(--achra)] text-[var(--achra)] hover:bg-[var(--achra)] hover:text-white hover-lift"
+              >
+                <Link href="/included" className="inline-flex items-center gap-2">
+                  See what's included
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
+          </ScrollReveal>
         </div>
       </Section>
 
       {/* Ownership Section */}
       <Section id="ownership" className="border-b border-border">
         <div className="space-y-10">
-          <div className="mx-auto max-w-3xl space-y-3 text-center">
-            <span className="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700">
-              Clear boundaries
-            </span>
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">{ownership.title}</h2>
-            <p className="text-base text-muted-foreground">{ownership.subtitle}</p>
-          </div>
+          <ScrollReveal>
+            <div className="mx-auto max-w-3xl space-y-3 text-center">
+              <span className="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700">
+                Clear boundaries
+              </span>
+              <h2 className="text-3xl font-bold tracking-tight md:text-4xl">{ownership.title}</h2>
+              <p className="text-base text-muted-foreground">{ownership.subtitle}</p>
+            </div>
+          </ScrollReveal>
 
           <div className="mx-auto max-w-5xl">
             <div className="grid gap-6 md:grid-cols-2">
               {/* You Own */}
-              <div className="rounded-2xl border-2 border-[var(--achra)]/20 bg-gradient-to-br from-[var(--achra)]/5 to-white p-6 md:p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--achra)] text-white shadow-lg shadow-[var(--achra)]/20">
-                    <KeyRound className="h-6 w-6" />
+              <ScrollReveal delay={100} animation="slide-left">
+                <div className="rounded-2xl border-2 border-[var(--achra)]/20 bg-gradient-to-br from-[var(--achra)]/5 to-white p-6 md:p-8 hover:shadow-lg hover:border-[var(--achra)]/40 transition-all h-full">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--achra)] text-white shadow-lg shadow-[var(--achra)]/20">
+                      <KeyRound className="h-6 w-6" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900">What you own</h3>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">What you own</h3>
+                  <ul className="space-y-4">
+                    {ownership.youOwn.map((item, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-[var(--achra)] shrink-0 mt-0.5" />
+                        <span className="text-sm leading-relaxed text-gray-700">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="space-y-4">
-                  {ownership.youOwn.map((item, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-[var(--achra)] shrink-0 mt-0.5" />
-                      <span className="text-sm leading-relaxed text-gray-700">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              </ScrollReveal>
 
               {/* Operator Handles */}
-              <div className="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100 text-gray-600">
-                    <Settings className="h-6 w-6" />
+              <ScrollReveal delay={200} animation="slide-right">
+                <div className="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm hover:shadow-lg hover:border-gray-300 transition-all h-full">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100 text-gray-600">
+                      <Settings className="h-6 w-6" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900">What we handle</h3>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900">What we handle</h3>
+                  <ul className="space-y-4">
+                    {ownership.operatorHandles.map((item, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-gray-400 shrink-0 mt-0.5" />
+                        <span className="text-sm leading-relaxed text-gray-600">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="space-y-4">
-                  {ownership.operatorHandles.map((item, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-gray-400 shrink-0 mt-0.5" />
-                      <span className="text-sm leading-relaxed text-gray-600">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              </ScrollReveal>
             </div>
           </div>
           {/* CTAs */}
-          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center pt-4">
-            <Button size="lg" asChild className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white">
-              <Link href="/contact">Schedule a Call</Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild className="border-gray-300 hover:border-[var(--achra)] hover:text-[var(--achra)]">
-              <Link href="/pricing">See Pricing</Link>
-            </Button>
-          </div>
+          <ScrollReveal delay={300}>
+            <div className="flex flex-col gap-3 sm:flex-row sm:justify-center pt-4">
+              <Button size="lg" asChild className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white hover-lift">
+                <Link href="/contact">Schedule a Call</Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild className="border-gray-300 hover:border-[var(--achra)] hover:text-[var(--achra)] hover-lift">
+                <Link href="/pricing">See Pricing</Link>
+              </Button>
+            </div>
+          </ScrollReveal>
         </div>
       </Section>
 
       {/* FAQ Section */}
       <Section id="faq" className="border-b border-border bg-gray-50/50">
-        <FAQ />
+        <ScrollReveal>
+          <FAQ />
+        </ScrollReveal>
       </Section>
 
       {/* Achra Platform Section */}
@@ -319,95 +337,103 @@ export default function OperationalHubPage() {
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
             {/* Left: Headline and subhead */}
-            <div className="space-y-6">
-              <span className="inline-flex items-center rounded-full bg-[var(--achra)]/10 px-3 py-1 text-xs font-medium text-[var(--achra)]">
-                {achraPlatform.tagline}
-              </span>
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">{achraPlatform.title}</h2>
-              <p className="text-xl text-[var(--achra)] font-medium">{achraPlatform.subtitle}</p>
-              <div className="pt-2">
-                <Button size="lg" asChild className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white">
-                  <a href={achraPlatform.cta.href} className="inline-flex items-center gap-2">
-                    {achraPlatform.cta.label}
-                    <ArrowRight className="h-4 w-4" />
-                  </a>
-                </Button>
+            <ScrollReveal animation="slide-left">
+              <div className="space-y-6">
+                <span className="inline-flex items-center rounded-full bg-[var(--achra)]/10 px-3 py-1 text-xs font-medium text-[var(--achra)]">
+                  {achraPlatform.tagline}
+                </span>
+                <h2 className="text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">{achraPlatform.title}</h2>
+                <p className="text-xl text-[var(--achra)] font-medium">{achraPlatform.subtitle}</p>
+                <div className="pt-2">
+                  <Button size="lg" asChild className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white hover-lift">
+                    <a href={achraPlatform.cta.href} className="inline-flex items-center gap-2">
+                      {achraPlatform.cta.label}
+                      <ArrowRight className="h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
               </div>
-            </div>
+            </ScrollReveal>
             {/* Right: Description and features */}
-            <div className="space-y-6">
-              <p className="text-base leading-relaxed text-muted-foreground">
-                {achraPlatform.description}
-              </p>
-              <ul className="space-y-3">
-                {achraPlatform.features.map((feature, index) => (
-                  <li key={index} className="flex items-center gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-[var(--achra)] shrink-0" />
-                    <span className="text-sm text-gray-700">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ScrollReveal delay={150} animation="slide-right">
+              <div className="space-y-6">
+                <p className="text-base leading-relaxed text-muted-foreground">
+                  {achraPlatform.description}
+                </p>
+                <ul className="space-y-3">
+                  {achraPlatform.features.map((feature, index) => (
+                    <li key={index} className="flex items-center gap-3 group">
+                      <CheckCircle2 className="h-5 w-5 text-[var(--achra)] shrink-0 transition-transform group-hover:scale-110" />
+                      <span className="text-sm text-gray-700">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </Section>
 
       {/* Powered by Powerhouse Section */}
       <Section id="powerhouse" className="border-b border-border">
-        <div className="mx-auto max-w-5xl">
-          <div className="rounded-2xl border border-gray-200 bg-gradient-to-br from-gray-50 to-white p-8 md:p-12 shadow-sm">
-            <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
-              <div className="flex justify-center md:justify-start">
-                <Image
-                  src="/PH-Logo-Dark-L.png"
-                  alt="Powerhouse"
-                  width={400}
-                  height={120}
-                  className="h-24 md:h-32 w-auto"
-                />
-              </div>
-              <div className="text-center md:text-left space-y-4">
-                <p className="text-lg font-semibold text-[var(--achra)]">{poweredByPowerhouse.tagline}</p>
-                <p className="text-base leading-relaxed text-muted-foreground">{poweredByPowerhouse.description}</p>
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <Button variant="outline" asChild className="border-[var(--achra)] text-[var(--achra)] hover:bg-[var(--achra)] hover:text-white">
-                    <a href={poweredByPowerhouse.cta.href} className="inline-flex items-center gap-2">
-                      {poweredByPowerhouse.cta.label}
-                      <ArrowRight className="h-4 w-4" />
-                    </a>
-                  </Button>
-                  <Button variant="outline" asChild className="border-gray-300 text-gray-700 hover:border-[var(--achra)] hover:text-[var(--achra)]">
-                    <a href={poweredByPowerhouse.vetra.href} className="inline-flex items-center gap-2">
-                      {poweredByPowerhouse.vetra.label}
-                      <ArrowRight className="h-4 w-4" />
-                    </a>
-                  </Button>
+        <ScrollReveal animation="scale">
+          <div className="mx-auto max-w-5xl">
+            <div className="rounded-2xl border border-gray-200 bg-gradient-to-br from-gray-50 to-white p-8 md:p-12 shadow-sm hover:shadow-lg transition-shadow">
+              <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
+                <div className="flex justify-center md:justify-start">
+                  <Image
+                    src="/PH-Logo-Dark-L.png"
+                    alt="Powerhouse"
+                    width={400}
+                    height={120}
+                    className="h-24 md:h-32 w-auto"
+                  />
+                </div>
+                <div className="text-center md:text-left space-y-4">
+                  <p className="text-lg font-semibold text-[var(--achra)]">{poweredByPowerhouse.tagline}</p>
+                  <p className="text-base leading-relaxed text-muted-foreground">{poweredByPowerhouse.description}</p>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <Button variant="outline" asChild className="border-[var(--achra)] text-[var(--achra)] hover:bg-[var(--achra)] hover:text-white hover-lift">
+                      <a href={poweredByPowerhouse.cta.href} className="inline-flex items-center gap-2">
+                        {poweredByPowerhouse.cta.label}
+                        <ArrowRight className="h-4 w-4" />
+                      </a>
+                    </Button>
+                    <Button variant="outline" asChild className="border-gray-300 text-gray-700 hover:border-[var(--achra)] hover:text-[var(--achra)] hover-lift">
+                      <a href={poweredByPowerhouse.vetra.href} className="inline-flex items-center gap-2">
+                        {poweredByPowerhouse.vetra.label}
+                        <ArrowRight className="h-4 w-4" />
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </ScrollReveal>
       </Section>
 
       {/* Footer CTA Section */}
       <Section className="bg-gradient-to-b from-white via-[var(--achra)]/5 to-[var(--achra)]/10">
-        <div className="mx-auto max-w-3xl space-y-8 text-center">
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[var(--achra)] shadow-lg shadow-[var(--achra)]/30">
-            <Sparkles className="h-8 w-8 text-white" />
+        <ScrollReveal animation="scale">
+          <div className="mx-auto max-w-3xl space-y-8 text-center">
+            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[var(--achra)] shadow-lg shadow-[var(--achra)]/30 animate-pulse-glow">
+              <Sparkles className="h-8 w-8 text-white" />
+            </div>
+            <div className="space-y-4">
+              <h2 className="text-balance text-3xl font-bold tracking-tight md:text-4xl">{footerCta.prompt}</h2>
+              <p className="text-lg text-muted-foreground">{footerCta.subtitle}</p>
+            </div>
+            <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
+              <Button size="lg" asChild className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white shadow-lg shadow-[var(--achra)]/20 hover-lift">
+                <Link href={footerCta.primaryCta.href}>{footerCta.primaryCta.label}</Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild className="border-gray-300 hover:border-[var(--achra)] hover:text-[var(--achra)] hover-lift">
+                <Link href={footerCta.secondaryCta.href}>{footerCta.secondaryCta.label}</Link>
+              </Button>
+            </div>
           </div>
-          <div className="space-y-4">
-            <h2 className="text-balance text-3xl font-bold tracking-tight md:text-4xl">{footerCta.prompt}</h2>
-            <p className="text-lg text-muted-foreground">{footerCta.subtitle}</p>
-          </div>
-          <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <Button size="lg" asChild className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white shadow-lg shadow-[var(--achra)]/20">
-              <Link href={footerCta.primaryCta.href}>{footerCta.primaryCta.label}</Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild className="border-gray-300 hover:border-[var(--achra)] hover:text-[var(--achra)]">
-              <Link href={footerCta.secondaryCta.href}>{footerCta.secondaryCta.label}</Link>
-            </Button>
-          </div>
-        </div>
+        </ScrollReveal>
       </Section>
 
       <SharedFooter />

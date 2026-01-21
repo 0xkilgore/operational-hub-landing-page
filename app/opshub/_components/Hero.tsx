@@ -7,7 +7,7 @@ import { hero } from "../content"
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden border-b border-border">
+    <section className="relative overflow-hidden border-b border-border bg-gradient-mesh">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(122,58,255,0.08),rgba(255,255,255,0)_50%)]" />
       <div
@@ -20,18 +20,18 @@ export function Hero() {
       <div className="container relative mx-auto max-w-6xl px-4 py-12 md:px-6 md:py-16 lg:py-20">
         <div className="grid gap-8 lg:grid-cols-12 lg:gap-10">
           <div className="flex flex-col justify-start space-y-6 lg:col-span-7">
-            <div className="space-y-6">
+            <div className="space-y-6 animate-fade-in-up">
               <h1 className="text-balance text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">{hero.title}</h1>
               <p className="text-pretty text-lg text-muted-foreground md:text-xl mt-2">
                 A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting, handled by an operator team. Plus a legal entity for contracts and member privacy.
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap animate-fade-in-up" style={{ animationDelay: "150ms" }}>
               <Button
                 size="lg"
                 asChild
-                className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white focus-visible:ring-[var(--achra)]/30"
+                className="bg-[var(--achra)] hover:bg-[var(--achra-hover)] text-white focus-visible:ring-[var(--achra)]/30 hover-lift"
               >
                 <Link href={hero.primaryCta.href}>{hero.primaryCta.label}</Link>
               </Button>
@@ -39,7 +39,7 @@ export function Hero() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="hover:border-[var(--achra)]/50 hover:text-[var(--achra)] focus-visible:ring-[var(--achra)]/30 bg-transparent"
+                className="hover:border-[var(--achra)]/50 hover:text-[var(--achra)] focus-visible:ring-[var(--achra)]/30 bg-transparent hover-lift"
               >
                 <Link href={hero.secondaryCta.href}>{hero.secondaryCta.label}</Link>
               </Button>
@@ -54,11 +54,12 @@ export function Hero() {
             </div>
 
             {/* Proof Badges */}
-            <div className="flex flex-wrap gap-2 max-w-[520px]">
-              {hero.badges.map((badge) => (
+            <div className="flex flex-wrap gap-2 max-w-[520px] animate-fade-in-up" style={{ animationDelay: "300ms" }}>
+              {hero.badges.map((badge, index) => (
                 <span
                   key={badge}
-                  className="inline-flex items-center rounded-full border border-[var(--achra)]/20 bg-[var(--achra)]/5 px-3 py-1 text-xs font-medium text-[var(--achra)]"
+                  className="inline-flex items-center rounded-full border border-[var(--achra)]/20 bg-[var(--achra)]/5 px-3 py-1 text-xs font-medium text-[var(--achra)] transition-all hover:bg-[var(--achra)]/10 hover:border-[var(--achra)]/30"
+                  style={{ animationDelay: `${300 + index * 50}ms` }}
                 >
                   {badge}
                 </span>
@@ -66,7 +67,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="flex items-start justify-center lg:col-span-5 lg:justify-end">
+          <div className="flex items-start justify-center lg:col-span-5 lg:justify-end animate-scale-in" style={{ animationDelay: "200ms" }}>
             <DiagramCard />
           </div>
         </div>

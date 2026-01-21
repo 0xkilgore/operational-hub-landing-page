@@ -2,7 +2,7 @@ import { Check, ArrowRight, Building2, Users, CreditCard, FileText, Shield } fro
 
 export function DiagramCard() {
   return (
-    <div className="relative w-full max-w-[480px] overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-xl lg:justify-self-end">
+    <div className="relative w-full max-w-[480px] overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-xl lg:justify-self-end hover:shadow-2xl hover:border-[var(--achra)]/20 transition-all duration-300 hover-glow">
       {/* Header */}
       <div className="border-b border-gray-100 bg-gray-50 px-6 py-4">
         <div className="flex items-center gap-3">
