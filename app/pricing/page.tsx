@@ -62,7 +62,7 @@ export default function PricingPage() {
             </ul>
 
             <a
-              href="https://connect.acra.io"
+              href="https://connect.powerhouse.xyz"
               className="block w-full text-center border border-gray-300 hover:border-gray-400 py-3 rounded-xl font-medium transition-colors text-gray-700 hover:text-gray-900"
             >
               Get Started
@@ -234,7 +234,7 @@ export default function PricingPage() {
 
         {/* Self-service note */}
         <p className="text-center text-gray-500 text-sm mt-8">
-          Prefer to explore on your own? <a href="https://connect.acra.io" className="text-[rgb(122,58,255)] hover:underline">Try the platform free</a> or <a href="/included" className="text-[rgb(122,58,255)] hover:underline">see what's included</a>.
+          Prefer to explore on your own? <a href="https://connect.powerhouse.xyz" className="text-[rgb(122,58,255)] hover:underline">Try the platform free</a> or <a href="/included" className="text-[rgb(122,58,255)] hover:underline">see what's included</a>.
         </p>
       </section>
 
@@ -542,7 +542,7 @@ export default function PricingPage() {
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
-              href="https://connect.acra.io"
+              href="https://connect.powerhouse.xyz"
               className="border border-gray-300 hover:border-gray-400 px-8 py-3 rounded-xl font-medium transition-colors text-gray-700"
             >
               Try Free
