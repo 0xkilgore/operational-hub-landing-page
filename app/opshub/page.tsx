@@ -6,7 +6,8 @@ import { Hero } from "./_components/Hero"
 import { Section } from "./_components/Section"
 import { FAQ } from "./_components/FAQ"
 import { EntitySection } from "./_components/EntitySection"
-import { problem, audience, benefits, whatYouGet, howItWorks, ownership, footerCta, footer, achraPlatform, poweredByPowerhouse } from "./content"
+import { SharedFooter } from "@/app/_components/SharedFooter"
+import { problem, audience, benefits, whatYouGet, howItWorks, ownership, footerCta, achraPlatform, poweredByPowerhouse } from "./content"
 import Image from "next/image"
 import {
   Zap, Shield, Users, FileText, Workflow, ArrowRight,
@@ -409,13 +410,7 @@ export default function OperationalHubPage() {
         </div>
       </Section>
 
-      {/* Footer */}
-      <footer className="border-t border-gray-200 bg-gray-50 py-8">
-        <div className="container mx-auto max-w-6xl space-y-2 px-4 text-center text-sm text-gray-500 md:px-6">
-          <p>{footer.copyright}</p>
-          <p>{footer.disclaimer}</p>
-        </div>
-      </footer>
+      <SharedFooter />
     </div>
   )
 }
