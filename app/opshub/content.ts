@@ -318,7 +318,7 @@ export const achraPlatform = {
     "Integrated tooling for operations, governance, and treasury",
     "Modular platform that grows with your organization",
   ],
-  cta: { label: "Learn more about Achra", href: "https://www.achra.com" },
+  cta: { label: "Learn more about Achra", href: "https://achra.com" },
 }
 
 export const poweredByPowerhouse = {

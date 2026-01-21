@@ -13,7 +13,7 @@ const footerLinks = {
   company: {
     title: "Company",
     links: [
-      { label: "About Achra", href: "https://www.achra.com" },
+      { label: "About Achra", href: "https://achra.com" },
       { label: "Contact", href: "/contact" },
     ],
   },
