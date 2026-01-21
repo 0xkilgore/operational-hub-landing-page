@@ -14,6 +14,18 @@ export default function ContactPage() {
     (async function () {
       const cal = await getCalApi({"namespace":"30min"})
       cal("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#7A3AFF"}},"hideEventTypeDetails":false,"layout":"month_view"})
+
+      // Track booking completion in Plausible
+      cal("on", {
+        action: "bookingSuccessful",
+        callback: () => {
+          // @ts-expect-error plausible is loaded globally
+          if (typeof window.plausible !== 'undefined') {
+            // @ts-expect-error plausible is loaded globally
+            window.plausible('Call Booked')
+          }
+        }
+      })
     })()
   }, [])
 
