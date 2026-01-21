@@ -23,7 +23,7 @@ export function Hero() {
             <div className="space-y-6">
               <h1 className="text-balance text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">{hero.title}</h1>
               <p className="text-pretty text-lg text-muted-foreground md:text-xl mt-2">
-                A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting—handled by an operator team—plus a legal entity for contracts and member privacy.
+                A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting, handled by an operator team. Plus a legal entity for contracts and member privacy.
               </p>
             </div>
 

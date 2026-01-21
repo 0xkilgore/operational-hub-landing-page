@@ -5,6 +5,7 @@ export const navigation = {
     { label: "What's Included", href: "/included" },
     { label: "Swiss Entity", href: "/swiss-entity" },
     { label: "Pricing", href: "/pricing" },
+    { label: "Blog", href: "/blog" },
   ],
   cta: { label: "Book a Call", href: "/contact" },
 }
@@ -12,7 +13,7 @@ export const navigation = {
 export const hero = {
   title: "Less Admin. More Building",
   subtitle:
-    "A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting—handled by an operator team—plus a legal entity for contracts and member privacy.",
+    "A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting, handled by an operator team. Plus a legal entity for contracts and member privacy.",
   primaryCta: { label: "Schedule a call", href: "/contact" },
   secondaryCta: { label: "See Pricing", href: "/pricing" },
   badges: ["Operator Support", "Invoicing + Approvals", "Global Payouts", "Monthly Close", "Agreement Templates"],
@@ -296,8 +297,7 @@ export const footerCta = {
   prompt: "Build the product, not the back office.",
   subtitle: "A back office system for global teams, with clean records for reporting and tax filings.",
   primaryCta: { label: "Schedule a call", href: "/contact" },
-  secondaryCta: { label: "Try the platform free", href: "https://connect.powerhouse.xyz/" },
-  tertiaryCta: { label: "See Pricing", href: "/pricing" },
+  secondaryCta: { label: "See Pricing", href: "/pricing" },
 }
 
 export const footer = {
@@ -310,14 +310,21 @@ export const achraPlatform = {
   title: "Built on the Achra platform",
   subtitle: "The marketplace for global coordination",
   description:
-    "Powerhouse is building Achra—a platform that connects the tools organizations need to operate globally. The Operational Hub is your foundation: a legal entity, back office workflows, and an operator team. As the platform grows, you'll be able to manage workstreams, find builders and service providers, coordinate treasury, and run governance—all designed to work together.",
+    "Achra is a platform that connects the tools organizations need to operate globally. The Operational Hub is your foundation: a legal entity, back office workflows, and an operator team. As the platform grows, you'll be able to manage workstreams, find builders and service providers, coordinate treasury, and run governance. All designed to work together.",
   features: [
     "Manage workstreams and coordinate distributed teams",
     "Find and engage builders, contractors, and service providers",
     "Integrated tooling for operations, governance, and treasury",
     "Modular platform that grows with your organization",
   ],
-  cta: { label: "Learn more about Powerhouse", href: "https://www.powerhousesno.org" },
+  cta: { label: "Learn more about Achra", href: "https://www.achra.com" },
+}
+
+export const poweredByPowerhouse = {
+  tagline: "Powered by Powerhouse",
+  description: "Powerhouse builds tools and infrastructure for decentralized organizations. We help teams coordinate globally with open-source software and operational support.",
+  cta: { label: "Learn more", href: "https://www.powerhousesno.org" },
+  vetra: { label: "Explore Vetra", href: "https://www.vetra.io" },
 }
 
 export const differentiation = {

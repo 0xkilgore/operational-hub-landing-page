@@ -6,7 +6,8 @@ import { Hero } from "./_components/Hero"
 import { Section } from "./_components/Section"
 import { FAQ } from "./_components/FAQ"
 import { EntitySection } from "./_components/EntitySection"
-import { problem, audience, benefits, whatYouGet, howItWorks, ownership, footerCta, footer, achraPlatform } from "./content"
+import { problem, audience, benefits, whatYouGet, howItWorks, ownership, footerCta, footer, achraPlatform, poweredByPowerhouse } from "./content"
+import Image from "next/image"
 import {
   Zap, Shield, Users, FileText, Workflow, ArrowRight,
   Clock, Code, Lock, CheckCircle2, Sparkles,
@@ -182,9 +183,7 @@ export default function OperationalHubPage() {
 
           {/* Steps */}
           <div className="mx-auto max-w-3xl">
-            <div className="relative space-y-6 overflow-hidden pb-1">
-              {/* Connecting line - ends at step 3 circle center */}
-              <div className="absolute left-7 top-7 w-0.5 bg-gradient-to-b from-[var(--achra)] via-blue-500 to-emerald-500 md:left-9" style={{ height: 'calc(100% - 5rem)' }} />
+            <div className="relative space-y-6">
 
               {howItWorks.steps.map((step, index) => {
                 const stepColors = [
@@ -347,6 +346,43 @@ export default function OperationalHubPage() {
         </div>
       </Section>
 
+      {/* Powered by Powerhouse Section */}
+      <Section id="powerhouse" className="border-b border-border">
+        <div className="mx-auto max-w-5xl">
+          <div className="rounded-2xl border border-gray-200 bg-gradient-to-br from-gray-50 to-white p-8 md:p-12 shadow-sm">
+            <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-center">
+              <div className="flex justify-center md:justify-start">
+                <Image
+                  src="/PH-Logo-Dark-L.png"
+                  alt="Powerhouse"
+                  width={400}
+                  height={120}
+                  className="h-24 md:h-32 w-auto"
+                />
+              </div>
+              <div className="text-center md:text-left space-y-4">
+                <p className="text-lg font-semibold text-[var(--achra)]">{poweredByPowerhouse.tagline}</p>
+                <p className="text-base leading-relaxed text-muted-foreground">{poweredByPowerhouse.description}</p>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Button variant="outline" asChild className="border-[var(--achra)] text-[var(--achra)] hover:bg-[var(--achra)] hover:text-white">
+                    <a href={poweredByPowerhouse.cta.href} className="inline-flex items-center gap-2">
+                      {poweredByPowerhouse.cta.label}
+                      <ArrowRight className="h-4 w-4" />
+                    </a>
+                  </Button>
+                  <Button variant="outline" asChild className="border-gray-300 text-gray-700 hover:border-[var(--achra)] hover:text-[var(--achra)]">
+                    <a href={poweredByPowerhouse.vetra.href} className="inline-flex items-center gap-2">
+                      {poweredByPowerhouse.vetra.label}
+                      <ArrowRight className="h-4 w-4" />
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* Footer CTA Section */}
       <Section className="bg-gradient-to-b from-white via-[var(--achra)]/5 to-[var(--achra)]/10">
         <div className="mx-auto max-w-3xl space-y-8 text-center">
@@ -363,9 +399,6 @@ export default function OperationalHubPage() {
             </Button>
             <Button size="lg" variant="outline" asChild className="border-gray-300 hover:border-[var(--achra)] hover:text-[var(--achra)]">
               <Link href={footerCta.secondaryCta.href}>{footerCta.secondaryCta.label}</Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild className="border-gray-300 hover:border-[var(--achra)] hover:text-[var(--achra)]">
-              <Link href={footerCta.tertiaryCta.href}>{footerCta.tertiaryCta.label}</Link>
             </Button>
           </div>
         </div>

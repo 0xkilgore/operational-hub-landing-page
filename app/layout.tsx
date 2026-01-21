@@ -36,6 +36,11 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
+        {/* Tidio Chat Widget */}
+        <Script
+          src="//code.tidio.co/ancmxjjdvucrx5im4lufpphaiipclvf2.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
