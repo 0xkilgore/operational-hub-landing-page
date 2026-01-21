@@ -8,11 +8,29 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Operational Hub - Less Admin. More Building.',
-  description: 'Your back office, handled. Entity setup, accounting, payroll, and compliance for builder teams.',
+  title: {
+    default: 'Operational Hub - Less Admin. More Building.',
+    template: '%s | Operational Hub',
+  },
+  description: 'A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting handled by an operator team, plus a Swiss legal entity for contracts and member privacy.',
+  keywords: ['back office', 'operations', 'Swiss entity', 'invoicing', 'payroll', 'compliance', 'global teams', 'crypto operations', 'open source', 'DAO'],
+  authors: [{ name: 'Achra' }],
+  creator: 'Achra',
   icons: {
     icon: '/Achra-abstract.png',
     apple: '/Achra-abstract.png',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'Operational Hub',
+    title: 'Operational Hub - Less Admin. More Building.',
+    description: 'A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting handled by an operator team, plus a Swiss legal entity.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Operational Hub - Less Admin. More Building.',
+    description: 'A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting handled by an operator team.',
   },
 }
 
@@ -36,6 +54,11 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
+        {/* Tidio Chat Widget */}
+        <Script
+          src="//code.tidio.co/ancmxjjdvucrx5im4lufpphaiipclvf2.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )

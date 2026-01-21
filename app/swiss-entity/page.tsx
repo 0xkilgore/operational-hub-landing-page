@@ -1,6 +1,12 @@
+import type { Metadata } from "next"
 import { Check, X, ArrowRight, Shield, Globe, Building2, Users, Lock, Scale } from "lucide-react"
 import { SharedHeader } from "../_components/SharedHeader"
 import { SharedFooter } from "../_components/SharedFooter"
+
+export const metadata: Metadata = {
+  title: "Swiss Entity | Operational Hub",
+  description: "A Swiss association gives your team a legal home with privacy, flexibility, and a framework built for international builder teams. Hold assets, sign contracts, and operate globally.",
+}
 
 export default function SwissEntityPage() {
   return (
