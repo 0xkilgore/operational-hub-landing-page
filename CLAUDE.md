@@ -35,13 +35,19 @@ Operational Hub is a back office system for global teams with invoicing, payouts
 
 ### Git Info
 - Remote: https://github.com/0xkilgore/operational-hub-landing-page.git
-- Working branch: `feedback`
+- Branches: `main` (production), `free-tier` (includes Free pricing tier)
 
 ### Site Notes
 - Content is centralized in `app/opshub/content.ts` for easy updates
 - Brand color: `#7A3AFF` / CSS var `--achra`
-- Plausible analytics enabled
+- Plausible analytics enabled with custom event tracking for Cal.com bookings ('Call Booked' event)
 - Cal.com embed used for booking calls
+- Tidio chat installed (integrates with HubSpot)
+- Google Search Console verified
+- Blog in navigation on all pages
+- Animations (animate-fade-in-up) added to all pages
+- Pricing terminology: "per regular contractor" (not "per seat")
+- Setup fee: mentioned on pricing page but specific amount ($3,000) not displayed
 
 ---
 
@@ -55,13 +61,18 @@ Location: `project management/`
 - When processing meeting notes, extract action items and key decisions
 
 ### Pricing Model
-- Primary reference: `PRICING_MODEL.md` (quick reference for tiers, margins, costs)
-- Detailed spreadsheet: `project management/OH Pricing Risk - updated model v4.xlsx`
-- Key numbers:
-  - Setup fee: $6,848.53 (5% margin)
+- **Home base doc:** `project management/OH-GTM-Home-Base.md` (master reference with all doc links)
+- Interactive model: `project management/Operational Hub Pricing Model.xlsx`
+- Quick reference: `PRICING_MODEL.md`
+- Key numbers (confirmed Jan 21, 2026):
+  - Setup fee: **$3,000** (all tiers) - pending final MME agreement first week Feb
   - Platform fee: $750/mo base
-  - Standard tier: $500/seat/mo (sweet spot: 5+ seats = 40%+ margins)
-  - Break-even: 3 seats
+  - Standard tier: $500/contractor/mo (not "seat" - use "contractor" for value framing)
+  - Starter tier: $21/invoice
+  - Monthly cost: $1,949/entity ($1,250 Accountable + $699 ops)
+  - Break-even: 3 contributors
+  - Sweet spot: 5+ contributors = 40%+ margins
+  - Add-ons: 15% margin, rounded to clean numbers
 
 ### GTM Strategy
 - Master GTM doc: `project management/OH-gtm-v2.pdf`
@@ -132,3 +143,31 @@ When starting a new session on this project:
 4. Added blog post draft outlines (lawyer + operator perspectives) - awaiting colleague review
 5. Created Google Ads strategy doc with campaign structure, keywords, and budget recommendations
 6. Created detailed outbound plan for Lumen with target segments, templates, and sales call structure
+7. **Jan 21:** GTM meeting - pricing confirmed at $3,000 setup, soft launch Jan 26
+8. **Jan 21:** Created `Operational Hub Pricing Model.xlsx` (interactive Excel with scenarios)
+9. **Jan 21:** Created `OH-GTM-Home-Base.md` (master reference doc with all document links)
+10. **Jan 21:** Created `platform-pricing-reconciliation-feedback.md` (platform vs website pricing gaps)
+11. **Jan 21:** Tidio chat + Google Search Console installed
+12. **Jan 21:** Next meeting agenda created for Jan 28
+13. **Jan 22:** Added Blog to navigation on all pages (SharedHeader)
+14. **Jan 22:** Added entrance animations to pricing, included, swiss-entity, and blog pages
+15. **Jan 22:** Enhanced "Powered by Powerhouse" section with visual improvements
+16. **Jan 22:** Added Plausible custom event tracking for Cal.com bookings ('Call Booked' event)
+17. **Jan 22:** Removed all MME references from site (replaced with "top Swiss firms")
+18. **Jan 22:** Changed pricing terminology from "per seat" to "per regular contractor"
+19. **Jan 22:** Setup fee mentioned but specific amount removed from display
+20. **Jan 22:** Created `free-tier` branch with Free pricing tier option
+
+## Upcoming Dates
+- **Jan 26:** Soft launch (blog content, outbound begins)
+- **Jan 28:** Next GTM meeting
+- **Jan 31:** Wouter @ Brussels conference
+- **First week Feb:** Layer Zero + MME meeting (setup cost finalized)
+- **Feb 17-21:** ETH Denver
+
+## Key Contacts (from meeting)
+- **Layer Zero:** Legal/entity setup, MME relationship
+- **Dracaena (Dana):** Accountable relationship, Jetstream operations
+- **Lumen:** Outbound sales, GTM strategy
+- **Willow:** Platform design, checkout flow
+- **Wouter:** Product, Acra platform
