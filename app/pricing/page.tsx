@@ -5,7 +5,7 @@ import { SharedFooter } from "../_components/SharedFooter"
 
 export const metadata: Metadata = {
   title: "Pricing | Operational Hub",
-  description: "Transparent pricing for your back office operations. Entity setup, accounting, payroll, and compliance with no hidden fees. Plans starting at $500/seat/month.",
+  description: "Transparent pricing for your back office operations. Entity setup, accounting, payroll, and compliance with no hidden fees. Plans starting at $500/contributor/month.",
 }
 
 export default function PricingPage() {
@@ -141,7 +141,7 @@ export default function PricingPage() {
                 <span className="text-3xl font-bold">$750</span>
                 <span className="text-gray-500">/month</span>
               </div>
-              <p className="text-[rgb(122,58,255)] text-sm mt-1 font-medium">+ $500 per seat</p>
+              <p className="text-[rgb(122,58,255)] text-sm mt-1 font-medium">+ $500/month per contributor</p>
               <p className="text-gray-400 text-xs mt-1">+ one-time setup fee</p>
             </div>
 
@@ -407,11 +407,11 @@ export default function PricingPage() {
       {/* Contributor Explainer */}
       <section className="border-t border-gray-200 bg-gray-50">
         <div className="max-w-3xl mx-auto px-6 py-16">
-          <h2 className="text-2xl font-bold mb-8 text-center">How per-seat pricing works</h2>
+          <h2 className="text-2xl font-bold mb-8 text-center">How per-contributor pricing works</h2>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-              <h3 className="font-semibold mb-3 text-[rgb(122,58,255)]">What counts as a seat</h3>
+              <h3 className="font-semibold mb-3 text-[rgb(122,58,255)]">What counts as a contributor</h3>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>Permanent, paid team members</li>
                 <li>Anyone with a contributor agreement</li>
@@ -430,7 +430,7 @@ export default function PricingPage() {
           </div>
 
           <p className="text-center text-gray-500 text-sm mt-6">
-            Add or remove seats anytime. Billing adjusts automatically.
+            Add or remove contributors anytime. Billing adjusts automatically.
           </p>
         </div>
       </section>
