@@ -99,7 +99,7 @@ export default function PricingPage() {
                 <span className="text-3xl font-bold">$750</span>
                 <span className="text-gray-500">/month</span>
               </div>
-              <p className="text-[rgb(122,58,255)] text-sm mt-1 font-medium">+ $500/month per contributor</p>
+              <p className="text-[rgb(122,58,255)] text-sm mt-1 font-medium">+ $500/month per regular contractor</p>
               <p className="text-gray-400 text-xs mt-1">+ one-time setup fee</p>
             </div>
 
@@ -357,7 +357,7 @@ export default function PricingPage() {
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-              <h3 className="font-semibold mb-3 text-[rgb(122,58,255)]">What counts as a contributor</h3>
+              <h3 className="font-semibold mb-3 text-[rgb(122,58,255)]">What counts as a regular contractor</h3>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>Permanent, paid team members</li>
                 <li>Anyone with a contributor agreement</li>
@@ -376,7 +376,7 @@ export default function PricingPage() {
           </div>
 
           <p className="text-center text-gray-500 text-sm mt-6">
-            Add or remove contributors anytime. Billing adjusts automatically.
+            Add or remove contractors anytime. Billing adjusts automatically.
           </p>
         </div>
       </section>
