@@ -173,7 +173,7 @@ export const howItWorks = {
         {
           heading: "Workforce classification and management",
           description:
-            "Templates and guidance for contractor and employee structures, with compliant classification support.",
+            "Templates and guidance for contributor and employee structures, with compliant classification support.",
         },
         {
           heading: "Compensation and payment infrastructure",
@@ -200,7 +200,7 @@ export const operatorSupport = {
     "Payments operations: invoicing intake, approvals workflow, payouts scheduling, multi-currency support",
     "Accounting and reporting: bookkeeping coordination, monthly close support, financial reporting package",
     "Tax and filings readiness: tax-ready records, VAT support where applicable, documentation for tax filings",
-    "Contracts and workforce ops: contractor and employment agreement templates, classification support with Swiss specialists",
+    "Contracts and workforce ops: contributor and employment agreement templates, classification support with Swiss specialists",
     "Tools and systems: accounting system setup (for example Xero), records storage, repeatable workflows",
   ],
 }
@@ -313,7 +313,7 @@ export const achraPlatform = {
     "Achra is a platform that connects the tools organizations need to operate globally. The Operational Hub is your foundation: a legal entity, back office workflows, and an operator team. As the platform grows, you'll be able to manage workstreams, find builders and service providers, coordinate treasury, and run governance. All designed to work together.",
   features: [
     "Manage workstreams and coordinate distributed teams",
-    "Find and engage builders, contractors, and service providers",
+    "Find and engage builders, contributors, and service providers",
     "Integrated tooling for operations, governance, and treasury",
     "Modular platform that grows with your organization",
   ],

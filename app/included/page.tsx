@@ -155,7 +155,7 @@ export default function WhatsIncludedPage() {
                 </p>
               </div>
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-gray-300 transition-all">
-                <h4 className="font-medium mb-2">Contractor management</h4>
+                <h4 className="font-medium mb-2">Contributor management</h4>
                 <p className="text-sm text-gray-600">
                   Track active contributors, contract terms, payment history, and documentation in one place.
                 </p>
