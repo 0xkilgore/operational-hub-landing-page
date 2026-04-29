@@ -73,10 +73,10 @@ export default function RootLayout({
         <Analytics />
         {/* Tidio Chat Widget */}
         <Script
-          src="//code.tidio.co/ancmxjjdvucrx5im4lufpphaiipclvf2.js"
+          src="//code.tidio.co/mz9obug3nfd3yqgycnqpdjrubksew02u.js"
           strategy="afterInteractive"
         />
-        {/* Beehiiv attribution tracking (UTM forwarding) */}
+{/* Beehiiv attribution tracking (UTM forwarding) */}
         <Script
           src="https://subscribe-forms.beehiiv.com/attribution.js"
           strategy="afterInteractive"

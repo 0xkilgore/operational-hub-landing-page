@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Navigation } from "./_components/Navigation"
+import { SharedHeader } from "@/app/_components/SharedHeader"
 import { Hero } from "./_components/Hero"
 import { Section } from "./_components/Section"
 import { FAQ } from "./_components/FAQ"
@@ -26,7 +26,7 @@ const benefitIcons = [Clock, FileText, Shield, Lock, Building2, Settings]
 export default function OperationalHubPage() {
   return (
     <div id="top" className="min-h-screen bg-background text-foreground">
-      <Navigation />
+      <SharedHeader />
       <Hero />
 
       {/* Problem Section */}

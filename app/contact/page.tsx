@@ -51,7 +51,7 @@ export default function ContactPage() {
               Let's talk
             </h1>
             <p className="text-gray-600 mb-8">
-              Book a 30-minute intro call to discuss your team's needs and see if Operational Hub is a good fit.
+              Book a 15-minute intro call to discuss your team's needs and see if Operational Hub is a good fit.
             </p>
 
             {/* What to expect */}
@@ -83,7 +83,7 @@ export default function ContactPage() {
             {/* Call details */}
             <div className="flex items-center gap-3 text-sm text-gray-500 mb-8">
               <Clock className="w-4 h-4" />
-              <span>30 minutes</span>
+              <span>15 minutes</span>
               <span className="text-gray-300">•</span>
               <span>Video call</span>
               <span className="text-gray-300">•</span>

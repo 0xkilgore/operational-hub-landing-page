@@ -1,0 +1,4 @@
+{
+    "cursor.terminal.enableAiChecks": true,
+    "terminal.integrated.defaultProfile.osx": "bash"
+}

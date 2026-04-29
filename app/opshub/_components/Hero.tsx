@@ -7,7 +7,7 @@ import { hero } from "../content"
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden border-b border-border bg-gradient-mesh">
+    <section className="relative z-0 overflow-hidden border-b border-border bg-gradient-mesh">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(122,58,255,0.08),rgba(255,255,255,0)_50%)]" />
       <div
