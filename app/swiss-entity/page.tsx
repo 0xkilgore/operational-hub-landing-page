@@ -34,7 +34,7 @@ export default function SwissEntityPage() {
             A Swiss association (Verein) is a legally recognized entity under Swiss law. It can own assets, enter contracts, and act in its own name, giving your team a proper legal structure without the complexity of a corporation.
           </p>
           <p className="text-gray-500">
-            Unlike corporations, associations are formed through member agreements rather than public filings. This means your team maintains control and privacy while gaining the legal protections of a formal entity.
+            Unlike corporations, associations are formed through member agreements; commercial register filing is optional for many non-profit associations. This means your team maintains privacy from public registries (subject to bank, AML, and counterparty KYC requirements) while gaining the legal protections of a formal entity.
           </p>
         </div>
       </section>
@@ -61,7 +61,7 @@ export default function SwissEntityPage() {
               </div>
               <h3 className="font-semibold mb-2">Clear legal framework</h3>
               <p className="text-sm text-gray-500">
-                Association law is flexible and well-defined. Regulatory treatment of blockchain-related activities is established.
+                Association law is flexible and well-defined. Switzerland has issued substantial guidance on blockchain and tokenization (FINMA ICO Guidelines, DLT Act). Application to specific activities still requires case-by-case analysis.
               </p>
             </div>
 
@@ -71,7 +71,7 @@ export default function SwissEntityPage() {
               </div>
               <h3 className="font-semibold mb-2">Limited liability</h3>
               <p className="text-sm text-gray-500">
-                Members are generally not personally liable for the association's obligations. Your personal assets stay protected.
+                Members are generally not personally liable for the association's obligations under Swiss law. Personal liability may apply in cases of intentional misconduct, gross negligence, or specific statutory exceptions (tax, criminal, certain regulatory matters).
               </p>
             </div>
 
@@ -91,7 +91,7 @@ export default function SwissEntityPage() {
               </div>
               <h3 className="font-semibold mb-2">Tax efficiency</h3>
               <p className="text-sm text-gray-500">
-                Associations are taxed under a cost-based methodology ("Cost +5%" model). Combined corporate tax rate in Zug is ~9-11%.
+                Associations may be eligible for a cost-based tax methodology ("Cost +5%" model) by ruling, depending on activities and structure. Combined corporate tax rate in Zug is approximately 9-11%. Tax treatment requires case-by-case advisor review.
               </p>
             </div>
 
@@ -341,7 +341,7 @@ export default function SwissEntityPage() {
             <div className="border-b border-gray-200 pb-6">
               <h3 className="font-semibold mb-2">How are Swiss associations taxed?</h3>
               <p className="text-gray-500 text-sm">
-                Associations are subject to Swiss corporate income tax, often assessed using a cost-based approach ("Cost +5%" model). In Canton Zug, the combined rate is approximately 9-11%.
+                Associations are subject to Swiss corporate income tax. Eligibility for cost-based assessment ("Cost +5%" model) depends on activity profile and is granted through tax ruling. In Canton Zug, the combined rate for ruled associations is approximately 9-11%. Specific tax treatment requires advisor review.
               </p>
             </div>
 
