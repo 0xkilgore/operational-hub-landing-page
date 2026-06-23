@@ -2,10 +2,10 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Operational Hub | Less Admin. More Building.",
-  description: "A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting handled by an operator team, plus a Swiss legal entity for contracts and member privacy.",
+  description: "Back-office workflow software for global teams: invoicing, payouts, compliance, reporting. Services delivered by operator partners; your own Swiss legal entity.",
   openGraph: {
     title: "Operational Hub | Less Admin. More Building.",
-    description: "A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting handled by an operator team, plus a Swiss legal entity for contracts and member privacy.",
+    description: "Back-office workflow software for global teams: invoicing, payouts, compliance, reporting. Services delivered by operator partners; your own Swiss legal entity.",
     type: "website",
   },
 }

@@ -19,7 +19,7 @@ export default function PricingPage() {
           Transparent pricing.<br />No surprises.
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "100ms" }}>
-          Your entity, your control. We handle the legal setup, accounting, payroll, and compliance so you can focus on building.
+          Your entity, your control. The Operational Hub coordinates legal setup, accounting, payroll, and compliance via licensed operator partners on the marketplace, so you can focus on building. Achra provides workflow software and coordination; counsel, accountants, and other regulated professionals deliver the underlying services.
         </p>
       </section>
 
@@ -50,23 +50,23 @@ export default function PricingPage() {
             <ul className="space-y-3 mb-8 flex-grow">
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Swiss association formation</span>
+                <span className="text-sm text-gray-700">Swiss association formation coordination (with licensed counsel partner)</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Registered address (Zug)</span>
+                <span className="text-sm text-gray-700">Registered address in Zug (via domicile provider partner)</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Annual tax filing</span>
+                <span className="text-sm text-gray-700">Annual tax filing coordination (filing by your tax advisor partner)</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Monthly accounting & close</span>
+                <span className="text-sm text-gray-700">Monthly accounting & close coordination (accounting by your accountant partner)</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Invoice management</span>
+                <span className="text-sm text-gray-700">Invoice management workflow</span>
               </li>
             </ul>
 
@@ -110,23 +110,23 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Expense policies (role-based)</span>
+                <span className="text-sm text-gray-700">Expense policy templates (role-based)</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Contributor onboarding & operations</span>
+                <span className="text-sm text-gray-700">Contributor onboarding & operations workflows</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Multi-currency payouts</span>
+                <span className="text-sm text-gray-700">Multi-currency payout coordination via Stripe Connect</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Dedicated ops support</span>
+                <span className="text-sm text-gray-700">Dedicated ops coordination</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Unlimited invoicing</span>
+                <span className="text-sm text-gray-700">Unlimited invoicing workflow</span>
               </li>
             </ul>
 
@@ -164,7 +164,7 @@ export default function PricingPage() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
-                <span className="text-sm text-gray-700">Multiple entities</span>
+                <span className="text-sm text-gray-700">Multi-entity workflows</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-[rgb(122,58,255)] shrink-0 mt-0.5" />
@@ -215,13 +215,13 @@ export default function PricingPage() {
               </thead>
               <tbody className="divide-y divide-gray-200">
                 <tr>
-                  <td className="py-3 px-4 text-gray-700">Swiss association formation</td>
+                  <td className="py-3 px-4 text-gray-700">Swiss association formation coordination (with licensed counsel partner)</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr className="bg-white">
-                  <td className="py-3 px-4 text-gray-700">Registered address (Zug)</td>
+                  <td className="py-3 px-4 text-gray-700">Registered address in Zug (via domicile provider partner)</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
@@ -239,19 +239,19 @@ export default function PricingPage() {
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr>
-                  <td className="py-3 px-4 text-gray-700">Annual tax filing</td>
+                  <td className="py-3 px-4 text-gray-700">Annual tax filing coordination (filing by your tax advisor partner)</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr className="bg-white">
-                  <td className="py-3 px-4 text-gray-700">Invoice management</td>
+                  <td className="py-3 px-4 text-gray-700">Invoice management workflow</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr>
-                  <td className="py-3 px-4 text-gray-700">Monthly accounting & close</td>
+                  <td className="py-3 px-4 text-gray-700">Monthly accounting & close coordination (accounting by your accountant partner)</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
@@ -269,31 +269,31 @@ export default function PricingPage() {
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr className="bg-white">
-                  <td className="py-3 px-4 text-gray-700">Expense policies (role-based)</td>
+                  <td className="py-3 px-4 text-gray-700">Expense policy templates (role-based)</td>
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr>
-                  <td className="py-3 px-4 text-gray-700">Contributor onboarding & operations</td>
+                  <td className="py-3 px-4 text-gray-700">Contributor onboarding & operations workflows</td>
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr className="bg-white">
-                  <td className="py-3 px-4 text-gray-700">Multi-currency payouts</td>
+                  <td className="py-3 px-4 text-gray-700">Multi-currency payout coordination via Stripe Connect</td>
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr>
-                  <td className="py-3 px-4 text-gray-700">Dedicated ops support</td>
+                  <td className="py-3 px-4 text-gray-700">Dedicated ops coordination</td>
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
                 </tr>
                 <tr className="bg-white">
-                  <td className="py-3 px-4 text-gray-700">Multiple entities</td>
+                  <td className="py-3 px-4 text-gray-700">Multi-entity workflows</td>
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center text-gray-400">-</td>
                   <td className="py-3 px-4 text-center"><Check className="w-5 h-5 text-[rgb(122,58,255)] mx-auto" /></td>
@@ -325,7 +325,7 @@ export default function PricingPage() {
       {/* Add-ons Section */}
       <section className="border-t border-gray-200">
         <div className="max-w-4xl mx-auto px-6 py-16">
-          <h2 className="text-2xl font-bold mb-4 text-center">Available add-ons</h2>
+          <h2 className="text-2xl font-bold mb-4 text-center">Available add-ons (delivered by partners on the marketplace)</h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
             Extend your plan with additional services as you grow.
           </p>
@@ -339,7 +339,7 @@ export default function PricingPage() {
                 <h3 className="font-semibold">Exchange account setup</h3>
               </div>
               <p className="text-sm text-gray-600">
-                Setup of centralized exchange accounts (Kraken, Coinbase, Binance, and more).
+                Exchange account onboarding coordination — accounts opened in your name on Kraken, Coinbase, Binance, and other exchanges with your direct relationship to each exchange.
               </p>
             </div>
 
@@ -351,7 +351,7 @@ export default function PricingPage() {
                 <h3 className="font-semibold">AML monitoring & compliance reporting</h3>
               </div>
               <p className="text-sm text-gray-600">
-                Regular compliance checks, wallet monitoring, and compliance reports.
+                AML monitoring workflow tools — monitoring performed by licensed compliance providers on the marketplace (registered Swiss SRO members or FINMA-supervised intermediaries) with workflow coordination through Achra.
               </p>
             </div>
 
@@ -363,7 +363,7 @@ export default function PricingPage() {
                 <h3 className="font-semibold">Card & spend operations</h3>
               </div>
               <p className="text-sm text-gray-600">
-                Corporate card management with spending controls and transaction monitoring.
+                Corporate card workflow management — card issuance and spend controls via your chosen card provider, with workflow coordination and transaction monitoring tools through Achra.
               </p>
             </div>
 
@@ -426,14 +426,14 @@ export default function PricingPage() {
             <div className="border-b border-gray-200 pb-6">
               <h3 className="font-semibold mb-2">Why is this more expensive than other payroll tools?</h3>
               <p className="text-gray-600 text-sm">
-                Most payroll tools give you software. You still do the accounting, tax filing, and compliance yourself. We do the actual work. Your books are closed, taxes are filed, and payroll runs without you lifting a finger.
+                Most payroll tools give you software only. With the Operational Hub, you also have access to a network of accountants, tax advisors, and operational specialists on the marketplace who handle the underlying services. Achra coordinates the workflow and the relationships, so books are closed, taxes are filed, and payouts run smoothly — through partners you engage directly. The pricing reflects the coordination, software, and curated network, not just software alone.
               </p>
             </div>
 
             <div className="border-b border-gray-200 pb-6">
               <h3 className="font-semibold mb-2">Do I still need to hire an accountant?</h3>
               <p className="text-gray-600 text-sm">
-                No. Accounting is included in Standard. Our team handles bookkeeping, reconciliation, and reporting. Starter includes basic bookkeeping with annual filings.
+                Yes — but the Operational Hub makes engaging one straightforward. Standard tier includes access to an accountant partner on the marketplace who handles bookkeeping, reconciliation, and reporting; Achra coordinates the workflow. Starter tier includes annual filing coordination with simpler ongoing requirements. You always have a direct accountant relationship; the Hub manages the coordination.
               </p>
             </div>
 
@@ -447,7 +447,7 @@ export default function PricingPage() {
             <div className="border-b border-gray-200 pb-6">
               <h3 className="font-semibold mb-2">What's the difference between Starter and Standard?</h3>
               <p className="text-gray-600 text-sm">
-                Starter includes entity setup and annual filings, great for grant recipients with minimal monthly activity. Standard adds full monthly accounting, contributor operations, and ongoing support for teams with regular payroll.
+                Starter includes entity setup coordination and annual filing coordination, suited for grant recipients with minimal monthly activity. Standard adds monthly accounting coordination (via accountant partner), contributor operations workflows, and ongoing support for teams with regular contributor payouts.
               </p>
             </div>
 
@@ -461,7 +461,7 @@ export default function PricingPage() {
             <div className="pb-6">
               <h3 className="font-semibold mb-2">What currencies do you support?</h3>
               <p className="text-gray-600 text-sm">
-                Fiat (USD, EUR, CHF, GBP) and stablecoins (USDC, DAI). We handle the conversions.
+                Fiat (USD, EUR, CHF, GBP) and stablecoins (USDC, DAI). Currency conversions are coordinated via your chosen payment partner (e.g., Stripe Connect for fiat; integrations for stablecoin); the workflow surfaces conversion rates and timing.
               </p>
             </div>
           </div>
@@ -490,7 +490,7 @@ export default function PricingPage() {
               </div>
               <h3 className="font-semibold mb-2">We operate it</h3>
               <p className="text-gray-600 text-sm">
-                Unlike DIY platforms, we don't hand you software and wish you luck. We do the work.
+                Unlike DIY software platforms, the Operational Hub includes access to a coordinated network of operator partners on the marketplace who deliver the underlying services. The work gets done — by the right regulated professionals — without you needing to find, vet, and manage them individually.
               </p>
             </div>
 

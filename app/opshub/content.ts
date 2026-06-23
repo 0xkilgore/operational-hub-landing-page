@@ -13,15 +13,15 @@ export const navigation = {
 export const hero = {
   title: "Less Admin. More Building",
   subtitle:
-    "A turnkey back office for global teams. Invoicing, payouts, compliance, and reporting, handled by an operator team. Plus a legal entity for contracts and member privacy.",
+    "A turnkey back-office platform for global teams. Workflow software for invoicing, payouts, compliance, and reporting; regulated services delivered by operator partners on the marketplace. Plus your own legal entity for contracts and member privacy.",
   primaryCta: { label: "Schedule a call", href: "/contact" },
   secondaryCta: { label: "See Pricing", href: "/pricing" },
-  badges: ["Operator Support", "Invoicing + Approvals", "Global Payouts", "Monthly Close", "Agreement Templates"],
+  badges: ["Operator Partner Network", "Invoicing + Approval Workflows", "Global Payout Coordination", "Monthly Close Workflows", "Agreement Templates"],
 }
 
 export const problem = {
   title: "Stop Doing Ops as a Side Job",
-  body: "Running an entity creates recurring work: invoices, approvals, payouts, close, and reporting. The Operational Hub turns that into a repeatable system with operator support and workflow software, so the project can run smoothly without admin becoming a second job.",
+  body: "Running an entity creates recurring work: invoices, approvals, payouts, close, and reporting. The Operational Hub provides workflow software and access to a curated marketplace of operator partners who handle the day-to-day, so the project can run smoothly without admin becoming a second job. You remain the founder of your entity; operator partners deliver regulated services directly to you.",
 }
 
 export const audience = {
@@ -42,7 +42,7 @@ export const audience = {
     {
       label: "Privacy-first teams",
       description:
-        "Teams that want to run real-world operations with member privacy by default and less personal exposure for signers and operators.",
+        "Teams that want to run real-world operations with member privacy by default and less personal exposure for signers.",
     },
   ],
 }
@@ -63,7 +63,7 @@ export const benefits = {
     {
       title: "Payments and compliance, without the maze",
       description:
-        "Run payouts and records through a clean process that works in fiat or stablecoins and keeps you audit ready when needed.",
+        "Coordinate payouts via Stripe Connect (in fiat or stablecoins) with operator-as-merchant-of-record, and keep records that prepare you for audit when needed.",
     },
     {
       title: "Privacy and personal protection",
@@ -73,7 +73,7 @@ export const benefits = {
     {
       title: "Legal entity behind your operations",
       description:
-        "Keep onchain control while the entity handles contracts, invoicing, and vendor relationships on the team's behalf.",
+        "Keep onchain control while your entity handles contracts, invoicing, and vendor relationships.",
     },
     {
       title: "Flexible structure, no lock-in",
@@ -85,13 +85,13 @@ export const benefits = {
 export const whatYouGet = {
   title: "What You Get",
   subtitle:
-    "A complete operating bundle, including workflow software and an operator team to run the day to day, plus an entity that can sign, pay and keep records.",
+    "A complete operating platform, including workflow software, access to a network of operator partners on the marketplace to run the day to day, plus your own entity that can sign, pay, and keep records.",
   items: [
     {
       id: "operator",
-      label: "Operator Support",
+      label: "Operator Partner Network",
       description:
-        "An operator team runs recurring workflows for you, so invoicing, approvals, payouts, and close do not become a constant distraction.",
+        "Operator partners on the marketplace run recurring workflows for you, with Achra providing coordination and workflow software, so invoicing, approvals, payouts, and close do not become a constant distraction.",
     },
     {
       id: "workflow",
@@ -103,7 +103,7 @@ export const whatYouGet = {
       id: "payments",
       label: "Payments Layer",
       description:
-        "Payouts in fiat or stablecoins with clean approval and recordkeeping, designed for contributor heavy teams.",
+        "Payout coordination in fiat or stablecoins via Stripe Connect, with clean approval workflows and recordkeeping, designed for contributor-heavy teams.",
     },
     {
       id: "agreements",
@@ -115,7 +115,7 @@ export const whatYouGet = {
       id: "entity",
       label: "Legal Entity",
       description:
-        "A legal home for the project that can sign contracts, issue invoices, hold IP and other assets, and run operations through the entity instead of through individuals.",
+        "Your own legal entity (Swiss Association at MVP) that can sign contracts, issue invoices, hold IP and other assets, and run operations through the entity instead of through individuals. Achra provides workflow software and coordination with counsel partners who form the entity for you.",
     },
   ],
 }
@@ -151,20 +151,20 @@ export const howItWorks = {
       number: 1,
       title: "Swiss Association Formation",
       description:
-        "Form your Swiss association with licensed counsel, registered address setup, legal document templates, and VAT documentation. A proven structure for global teams.",
-      counselNote: "Formation handled with licensed Swiss counsel.",
+        "Form your Swiss association with a licensed counsel partner on the marketplace. Achra provides legal document templates and VAT documentation workflows; counsel handles formation and review. Registered address provided by a domicile provider partner on the marketplace. A proven structure for global teams.",
+      counselNote: "Formation handled by your chosen licensed Swiss counsel partner on the marketplace.",
     },
     {
       number: 2,
       title: "Operational Setup",
       description:
-        "Operator team sets up admin workflows: payouts, vendors, approvals, reporting. Connect the operational pieces you need to run cleanly.",
+        "Operator partners you choose on the marketplace set up admin workflows: payouts, vendors, approvals, reporting. Achra provides the workflow platform; you connect the operational pieces you need to run cleanly.",
     },
     {
       number: 3,
       title: "Operate",
       description:
-        "Run payments and agreements through the entity, not as individuals. The operator team handles day-to-day operations and maintains clean documentation for reporting, audits when needed, and tax filings.",
+        "Run payments and agreements through your entity, not as individuals. Operator partners on the marketplace handle day-to-day operational tasks (with Achra workflow coordination); your accountant maintains accounting records; your auditor handles audits when needed; your tax advisor handles tax filings.",
       operatorSupportDetails: [
         {
           heading: "Complete operational setup and coordination",
@@ -173,20 +173,22 @@ export const howItWorks = {
         {
           heading: "Workforce classification and management",
           description:
-            "Templates and guidance for contributor and employee structures, with compliant classification support.",
+            "Templates and workflow guidance for contributor and employee structures. Compliant classification analysis performed by your employment counsel and tax advisor on the marketplace (workforce classification rules are jurisdiction-specific and require local expertise).",
         },
         {
           heading: "Compensation and payment infrastructure",
-          description: "Multi-currency payouts, expense workflows, and payment scheduling through regulated rails.",
+          description:
+            "Multi-currency payout coordination via Stripe Connect (regulated payment rails), expense workflows, and payment scheduling. Achra coordinates; Stripe Connect handles settlement; Achra never holds funds.",
         },
         {
           heading: "Swiss-compliant accounting",
-          description: "Swiss GAAP aligned bookkeeping, reporting, and annual financial statements.",
+          description:
+            "Swiss GAAP-aligned bookkeeping, reporting, and annual financial statements — prepared by your Swiss accountant on the marketplace, with Achra workflow support.",
         },
         {
           heading: "Swiss tax and regulatory compliance",
           description:
-            "Support for filings, VAT workflows, and keeping records organized for reporting and tax filings.",
+            "Workflow support for tax filings and VAT — filings performed by your Swiss tax advisor on the marketplace. Record organization that prepares you for reporting and tax filings.",
         },
       ],
     },
@@ -206,8 +208,8 @@ export const operatorSupport = {
 }
 
 export const ownership = {
-  title: "What You Own vs What Your Operator Team Handles",
-  subtitle: "You own the entity and the key approvals. The operator team runs day-to-day administration.",
+  title: "What You Own vs What Operator Partners Handle",
+  subtitle: "You own the entity and the key approvals. Operator partners on the marketplace run day-to-day administration; Achra provides the workflow platform that coordinates everything.",
   youOwn: [
     "Ultimate control: Core team assigned as founding member of the association, giving them ultimate control over the entity.",
     "Treasury control: You control the treasury and approvals, including a multisig if you use one.",
@@ -215,10 +217,10 @@ export const ownership = {
     "External advisors: You choose when to engage counsel, accounting, or other specialists.",
   ],
   operatorHandles: [
-    "Invoicing and collections workflows: Issuing invoices, tracking status, and keeping records organized.",
-    "Approvals and payouts: Preparing payment runs, collecting approvals, and executing payouts in fiat or stablecoins.",
-    "Monthly close and reporting: Reconciliation support, structured records, and monthly reporting inputs.",
-    "Admin and coordination: Vendor onboarding, documentation, and coordination with accounting and legal as needed.",
+    "Invoicing and collections workflows: Issuing invoices through your entity, tracking status, and keeping records organized.",
+    "Approvals and payout coordination: Preparing payment workflows, collecting approvals, and coordinating payouts via Stripe Connect in fiat or stablecoins. Achra coordinates the workflow; Stripe Connect handles settlement directly between parties.",
+    "Monthly close and reporting workflows: Reconciliation tooling, structured records, and monthly reporting inputs prepared in coordination with your accountant on the marketplace.",
+    "Admin and coordination: Vendor onboarding workflows, documentation tooling, and coordination with your accountant, tax advisor, and counsel on the marketplace as needed.",
   ],
 }
 
@@ -229,27 +231,27 @@ export const faq = {
     {
       question: "Do I still need someone to run operations?",
       answer:
-        "No. The Operational Hub includes workflow software plus an operator team that runs the recurring back office work, like invoicing, payables, approvals, contributor payments, and month-end processes, so you do not need to staff these functions internally.",
+        "No internal headcount required. The Operational Hub includes workflow software (Achra) plus access to a network of operator partners on the marketplace who run the recurring back-office work — invoicing, payables, approvals, contributor payment coordination, and month-end processes. You engage operator partners directly through the marketplace; they deliver services to you; Achra coordinates the workflows.",
     },
     {
       question: "Do I still need an accountant?",
       answer:
-        "No, not as an internal function. The Operational Hub handles day-to-day finance ops and keeps records organized, including the documentation needed for tax reporting, so you do not need to hire a dedicated accounting role to stay on top of the back office. When tax filings or statutory filings are required, the Hub coordinates with external professionals as needed.",
+        "Yes — but the Operational Hub makes engaging one straightforward. The platform includes workflow tooling for day-to-day finance ops and keeps records organized, but accounting work itself (bookkeeping, reporting, financial statements) is performed by an accountant. You engage your chosen accountant from the marketplace; the Hub coordinates the workflow. Tax filings are performed by your tax advisor (also engaged via the marketplace).",
     },
     {
       question: "Do I still need legal counsel?",
       answer:
-        "Sometimes, but far less than a custom setup. The Hub is built on standardized templates and a proven agreement stack, which greatly reduces drafting and repeated reviews. We can also connect you with top Swiss firms for cases where you want counsel review or have edge cases.",
+        "Yes — for any regulated legal work, you need licensed counsel. The Hub is built on standardized templates and a proven agreement stack, which significantly reduces the volume of custom drafting and repeated reviews. We connect you with our curated network of Swiss law firm partners on the marketplace; you engage counsel directly through them. Specialized matters (cross-border issues, regulated industries, etc.) typically require additional counsel time.",
     },
     {
       question: "How do invoicing and payments work (fiat and stablecoins)?",
       answer:
-        "The Hub provides a consistent workflow for invoices and payouts. Invoices can be issued through the entity, approvals are collected through a clear process, and payouts can be executed in fiat or stablecoins with records kept in one place for reporting and tax support. The operator team coordinates the workflow and documentation, while your core team keeps approval control.",
+        "The Hub provides workflow software for invoices and payouts. Invoices are issued through your entity. Approvals are collected through Achra's workflow. Payouts are coordinated via Stripe Connect (which handles settlement directly to recipients in fiat or stablecoins, with operator or your entity as merchant of record). Records are kept in one place for your accountant's monthly close and tax reporting. Operator partners on the marketplace coordinate the documentation; your core team keeps approval control; Achra never holds funds.",
     },
     {
       question: "How do setup work and how long does it take?",
       answer:
-        "Setup is designed to be standardized and fast. You choose the scope of operations you want covered, complete onboarding and compliance steps, and then the entity and operating workflows are put in place using a proven template stack. From there, the operator team helps you transition invoicing, payouts, records, and month-end routines into the new system. Timeline depends on complexity and required reviews, but the goal is to get you operational quickly without a custom legal build.",
+        "Setup is designed to be standardized and fast. You choose the scope of operations you want covered, complete onboarding and compliance steps, and then the entity and operating workflows are put in place using a proven template stack. From there, operator partners on the marketplace help you transition invoicing, payouts, records, and month-end routines into the new system. Timeline depends on complexity and required reviews, but the goal is to get you operational quickly without a custom legal build.",
     },
     {
       question: "Can we wind this down later?",
@@ -259,7 +261,7 @@ export const faq = {
     {
       question: "Do members have to be public or doxxed?",
       answer:
-        "Not by default. In the standard case, member names do not need to be published in a public registry, which supports privacy-first operations. Some counterparties and service providers, like banks or compliance vendors, may still require identity verification as part of their onboarding.",
+        "Not by default. In the standard case, member names do not need to be published in a public registry, which supports privacy-first operations. Some counterparties and service providers, like banks, payment institutions, and compliance vendors, will require identity verification as part of their KYC/AML obligations — this is standard practice and you should expect it.",
     },
     {
       question: "What does liability protection mean?",
@@ -310,7 +312,7 @@ export const achraPlatform = {
   title: "Built on the Achra platform",
   subtitle: "The marketplace for global coordination",
   description:
-    "Achra is a platform that connects the tools organizations need to operate globally. The Operational Hub is your foundation: a legal entity, back office workflows, and an operator team. As the platform grows, you'll be able to manage workstreams, find builders and service providers, coordinate treasury, and run governance. All designed to work together.",
+    "Achra is a platform that connects the tools and operator partners organizations need to operate globally. The Operational Hub is your foundation: your own legal entity, back-office workflow software, and access to a network of operator partners on the marketplace. As the platform grows, you'll be able to manage workstreams, find builders and service providers, coordinate treasury, and run governance. All designed to work together.",
   features: [
     "Manage workstreams and coordinate distributed teams",
     "Find and engage builders, contributors, and service providers",
@@ -322,7 +324,7 @@ export const achraPlatform = {
 
 export const poweredByPowerhouse = {
   tagline: "Powered by Powerhouse",
-  description: "Powerhouse builds tools and infrastructure for decentralized organizations. We help teams coordinate globally with open-source software and operational support.",
+  description: "Powerhouse builds tools and infrastructure for decentralized organizations. We help teams coordinate globally through open-source software and a marketplace of operator partners.",
   cta: { label: "Learn more", href: "https://powerhouse.io" },
   vetra: { label: "Explore Vetra", href: "https://www.vetra.io" },
 }
@@ -330,7 +332,7 @@ export const poweredByPowerhouse = {
 export const differentiation = {
   title: "More Than Entity Formation",
   description:
-    "Unlike standalone entity brokers, this is an integrated bundle with operator support, workflow systems, and clean recordkeeping built in from day one.",
+    "Unlike standalone entity brokers, this is an integrated platform with workflow software, access to a network of operator partners on the marketplace, and clean recordkeeping built in from day one.",
 }
 
 export const switzerland = {

@@ -70,7 +70,7 @@ export function DiagramCard() {
                 <CreditCard className="h-4 w-4 text-[var(--achra)]" />
               </div>
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium text-gray-900 truncate">Payroll processed</p>
+                <p className="text-sm font-medium text-gray-900 truncate">Contributor payouts coordinated</p>
                 <p className="text-xs text-gray-500">8 contributors • $38,400</p>
               </div>
               <span className="text-xs text-gray-400">1d ago</span>
@@ -82,7 +82,7 @@ export function DiagramCard() {
         <div className="flex items-center justify-between rounded-lg bg-gradient-to-r from-[var(--achra)]/5 to-[var(--achra)]/10 p-3 border border-[var(--achra)]/10">
           <div className="flex items-center gap-2">
             <Users className="h-4 w-4 text-[var(--achra)]" />
-            <span className="text-sm text-gray-700">Your ops team is handling it</span>
+            <span className="text-sm text-gray-700">Your operators are handling it</span>
           </div>
           <ArrowRight className="h-4 w-4 text-[var(--achra)]" />
         </div>
